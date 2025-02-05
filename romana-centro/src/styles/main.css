@@ -1,0 +1,137 @@
+:root {
+    --navy: #2C3E50;
+    --gold: #D4AF37;
+    --off-white: #f8e7c4;
+}
+
+@font-face {
+    font-family: 'Romanica';
+    src: url('../../public/fonts/Romanica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dalekpinpoint';
+    src: url('../../public/fonts/DalekPinpointBold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Romanica', sans-serif;
+}
+
+.logo-image {
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Romanica', serif;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: var(--navy);
+    padding: 0.8rem 1rem;
+    padding-bottom: 0.5rem;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--gold);
+    margin: 0;
+    margin-right: auto;
+    text-decoration: none;
+    padding: 0;    
+}
+
+.nav-links a {
+    color: var(--off-white);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: larger;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.hero h1 {
+    height: 50%;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10rem;
+}
+.cta-buttons a{
+    text-decoration: none;
+}
+
+.btn-primary,.btn-secondary {
+    border-radius: 10px;
+}
+
+.btn-secondary:hover,.btn-primary:hover {
+    transform: scale(1.1);
+    transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 0.8rem 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.features h2{
+    padding: 1rem;
+    text-align: center;
+    color: var(--navy);
+    font-size: 3rem;
+}
+.feature-card {
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }

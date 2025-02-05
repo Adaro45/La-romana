@@ -1,0 +1,37 @@
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+        url('../../public/images/placeholder-product.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--off-white);
+    padding: 2rem;
+  }
+  .features{
+      background:#f8e7c4;   
+    
+    }  
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .feature-card {
+    background: #2c3e50de;
+    color: var(--gold);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .feature-card:hover{
+    transform: scale(1.2);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  }
