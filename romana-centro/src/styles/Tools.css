@@ -1,0 +1,86 @@
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 90%;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+}
+
+.tool-card {
+    background: white;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (hover: hover) {
+    .tool-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .carf-image-container:hover img {
+      transform: scale(1.05);
+    }
+    
+    .card-button:hover {
+      background: #e0b52e;
+      transform: scale(1.05);
+    }
+  }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tools-grid {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .card-content {
+        padding: 1.2rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .development-banner {
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .card-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .development-banner p:first-child {
+        font-size: 1.2rem;
+    }
+
+    .banner-button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+/* Efectos especiales para herramientas */

@@ -6,6 +6,11 @@ export default function HomePage() {
   return (
     <div className="home-container">
       <section className="hero">
+      <img 
+              src="/images/log.png" 
+              alt="Romana Centro" 
+              className="logo-image-contact"
+            />
         <h1>Materiales y Soluciones para el Laminado y Enmarque</h1>
         <div className="cta-buttons">
           <Link to="/productos" className="btn-primary">Ver Catálogo</Link>
@@ -30,7 +35,7 @@ export default function HomePage() {
               },
               { 
                 title: 'Productos Terminados',
-                description: 'Contacte con nuestros asesores para recibir una muestra',
+                description: 'Contacte con nuestros asesores para ver el catálogo disponible',
                 link: '/contacto'
               }
             ].map((item) => (

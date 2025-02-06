@@ -1,17 +1,39 @@
 import '../styles/Contact.css';
 
 export default function Contact() {
+  const phoneNumber = "+525648210476";
+  const email = "romanacentro@yahoo.com";
+
   return (
     <div className="contact-container">
-      <h1>Contacto</h1>
+            <img 
+              src="/images/logoazul.png" 
+              alt="Romana Centro" 
+              className="logo-image-contact"
+            />
       <div className="contact-content">
-        <p>¿Necesitas asesoría especializada? Contáctanos:</p>
+        <p>Contáctanos:</p>
+        
         <div className="contact-info">
-          <p>📞 Tel: +52 55 1234 5678</p>
-          <p>📧 Email: contacto@romanacentro.com</p>
-          <p>📍 Dirección: Av. Principal 123, CDMX</p>
+          <p>📞 Tel: <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer">{phoneNumber}</a></p>
+          <p>📧 Email: <a href={`mailto:${email}`}>{email}</a></p>
+          <p>📍 Dirección: Donceles 74, Interior Local 10A, CDMX</p>
+        </div>
+
+        <div className="contact-buttons">
+          <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="contact-button whatsapp">
+            Chatear por WhatsApp
+          </a>
+          <a href={`mailto:${email}`} className="contact-button email">
+            Enviar Correo
+          </a>
         </div>
       </div>
+      <img 
+              src="/images/log.png" 
+              alt="Romana Centro" 
+              className="logo-image-contact"
+            />
     </div>
   );
 }
