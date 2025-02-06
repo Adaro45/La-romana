@@ -1,14 +1,20 @@
 .logo-image-contact{
+    width: 200px;
+    margin: 0.5rem;
+}
+.isotipo{
     width: 400px;
 }
 .contact-container {
     text-align: center;
-    background: linear-gradient(rgba(44, 62, 80, 0.679), rgba(44, 62, 80, 0.483)),
-     url('../../public/images/fondo.png') center/cover;
     color: var(--navy);
     padding: 50px 20px;
     font-family: 'Poppins', sans-serif;
-    height: 95vh;
+}
+.contact-background{
+    background: linear-gradient(rgba(44, 62, 80, 0.679), rgba(44, 62, 80, 0.483)),
+     url('../../public/images/fondo.png') center/cover;
+    height: 100vh;
 }
 
 .contact-content {
@@ -77,6 +83,9 @@
 
 @media (max-width: 480px) {
     .logo-image-contact{
-        width: 200px;
+        width: 100px;
+    }
+    .isotipo{
+        width: 300px;
     }
 }

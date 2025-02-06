@@ -5,9 +5,10 @@ export default function Contact() {
   const email = "romanacentro@yahoo.com";
 
   return (
+    <div className='contact-background'>
     <div className="contact-container">
-            <img 
-              src="/images/logoazul.png" 
+      <img 
+              src="/images/log.png" 
               alt="Romana Centro" 
               className="logo-image-contact"
             />
@@ -30,10 +31,11 @@ export default function Contact() {
         </div>
       </div>
       <img 
-              src="/images/log.png" 
-              alt="Romana Centro" 
-              className="logo-image-contact"
-            />
+        src="/images/logoazul.png" 
+        alt="Romana Centro" 
+        className="logo-image-contact isotipo"
+      />
+    </div>
     </div>
   );
 }

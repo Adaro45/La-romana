@@ -1,43 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="images/isotipo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#2C3E50" />
+    
+    <!-- Meta Descripción Optimizada -->
+    <meta 
+      name="description" 
+      content="Romana Centro - Especialistas en materiales y maquinaria para laminado y enmarque. Distribuidores líderes en insumos para talleres artísticos y fotográficos en México."
     />
-    <link rel="apple-touch-icon" href="images/isotipo.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.romanacentro.com/" />
+    <meta property="og:title" content="Romana Centro | Materiales Profesionales para Laminado y Enmarque" />
+    <meta property="og:description" content="Proveedores líderes de insumos y maquinaria para la industria del laminado. Envíos a toda la República Mexicana." />
+    <meta property="og:image" content="https://www.romanacentro.com/images/og-image.jpg" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Romana Centro</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.romanacentro.com/" />
+    <meta property="twitter:title" content="Romana Centro | Materiales Profesionales para Laminado y Enmarque" />
+    <meta property="twitter:description" content="Proveedores líderes de insumos y maquinaria para la industria del laminado. Envíos a toda la República Mexicana." />
+    <meta property="twitter:image" content="https://www.romanacentro.com/images/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.romanacentro.com/" />
+
+    <!-- Schema.org para Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Romana Centro",
+      "image": "https://www.romanacentro.com/images/logo.png",
+      "@id": "",
+      "url": "https://www.romanacentro.com/",
+      "telephone": "+52 (55) 1234 5678",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Principal 123",
+        "addressLocality": "Ciudad de México",
+        "addressRegion": "CDMX",
+        "postalCode": "12345",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4326077,
+        "longitude": -99.133208
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- Preconexiones importantes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <link rel="apple-touch-icon" href="images/isotipo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Título Optimizado -->
+    <title>Romana Centro | Materiales y Maquinaria para Laminado Profesional</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Necesitas habilitar JavaScript para ejecutar esta aplicación.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
+    <!-- Google Tag Manager (opcional) -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script> -->
   </body>
 </html>

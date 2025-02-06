@@ -11,7 +11,8 @@ export default function HomePage() {
               alt="Romana Centro" 
               className="logo-image-contact"
             />
-        <h1>Materiales y Soluciones para el Laminado y Enmarque</h1>
+            <h2 >"Tu alieado en el arte de enmarcar"</h2>
+        <h1>Materiales y Soluciones para el Laminado y Enmarcado</h1>
         <div className="cta-buttons">
           <Link to="/productos" className="btn-primary">Ver Catálogo</Link>
           <Link to="/contacto" className="btn-secondary">Contactar Asesor</Link>
