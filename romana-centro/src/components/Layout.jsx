@@ -30,6 +30,7 @@ export default function Layout({ children }) {
             <Link to="/" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
             <Link to="/productos" onClick={() => setIsMenuOpen(false)}>Productos</Link>
             <Link to="/herramientas" onClick={() => setIsMenuOpen(false)}>Herramientas</Link>
+            <Link to="/productos-terminados">Productos Terminados</Link>
             <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>Contacto</Link>
           </div>
         </nav>

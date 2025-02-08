@@ -1,0 +1,60 @@
+.finished-products-page {
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    background: #fff;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+  }
+  
+  .product-card {
+    background: var(--off-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--gold);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.15);
+  }
+  
+  .card-image-container {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background: #f8f8f8;
+  }
+  
+  /* Resto de estilos similares a Products.css */
+  /* ... (usar los mismos estilos base de Products.css) */
+  
+  /* Estilo único para productos terminados */
+  .product-card::before {
+    content: 'Listo para comprar';
+    position: absolute;
+    top: 25px;
+    right: -35px;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 0.3rem 2rem;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card::before {
+      right: -35px;
+      font-size: 0.7rem;
+    }
+  }

@@ -11,7 +11,7 @@ export default function HomePage() {
               alt="Romana Centro" 
               className="logo-image-contact"
             />
-            <h2 >"Tu alieado en el arte de enmarcar"</h2>
+            <h2 >"Tu aliado en el arte de enmarcar"</h2>
         <h1>Materiales y Soluciones para el Laminado y Enmarcado</h1>
         <div className="cta-buttons">
           <Link to="/productos" className="btn-primary">Ver Catálogo</Link>
@@ -37,7 +37,7 @@ export default function HomePage() {
               { 
                 title: 'Productos Terminados',
                 description: 'Contacte con nuestros asesores para ver el catálogo disponible',
-                link: '/contacto'
+                link: '/productos-terminados'
               }
             ].map((item) => (
               <Link to={item.link} key={item.title} className="feature-card">

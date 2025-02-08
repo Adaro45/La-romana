@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 5,
-    title: "Venecia",
+    title: "Portofino",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/5.JPG",
     specs: ["Cortada a medida", "Barra entera (2.9m)", "Acabado: Brillante"],
