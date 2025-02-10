@@ -6,8 +6,8 @@ import '../styles/FinishedProducts.css';
 const finishedProducts = [
   {
     id: 1,
-    title: "Tonantzin Guadalupe",
-    description: "Símbolo de sincretismo: diosa y virgen unidas.",
+    title: "Virgen de Guadalupe",
+    description: "Virgen maternal, consuelo y fe en México.",
     image: "/images/terminados/1.JPG",
     specs: [
       "Molduras ornamentadas realzan obra con elegante detalle.",
@@ -22,7 +22,7 @@ const finishedProducts = [
     description: "Comida final, preludio de redención y comunión.",
     image: "/images/terminados/2.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Molduras ornamentadas realzan obra con elegante detalle.",
       "Tamaños estándar",
       "Personalización disponible",
       "Materiales premium"
@@ -34,7 +34,7 @@ const finishedProducts = [
     description: "Virgen maternal, consuelo y fe en México.",
     image: "/images/terminados/3.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Molduras ornamentadas realzan obra con elegante detalle.",
       "Tamaños estándar",
       "Personalización disponible",
       "Materiales premium"
@@ -46,7 +46,7 @@ const finishedProducts = [
     description: "Familia divina, unión y amor sagrado eterno..",
     image: "/images/terminados/4.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Molduras ornamentadas realzan obra con elegante detalle.",
       "Tamaños estándar",
       "Personalización disponible",
       "Materiales premium"
@@ -58,7 +58,7 @@ const finishedProducts = [
     description: "Amor maternal y divino en tierno encuentro.",
     image: "/images/terminados/5.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Molduras ornamentadas realzan obra con elegante detalle.",
       "Tamaños estándar",
       "Personalización disponible",
       "Materiales premium"

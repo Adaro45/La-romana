@@ -41,7 +41,7 @@ const placeholderTools = [
     description: 'Pistola de unión neumática',
     image: '/images/herramientas/Vnailer.jpg',
     specs: ["Impulsa clavos en V de tamaño 7,10. 12,15mm",
-            "Compacto y ligero: Con solo 2,5 kg"
+            "Compacto: Con solo 2,5 kg"
     ],
   },
   {
