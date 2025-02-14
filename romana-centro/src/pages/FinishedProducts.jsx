@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import ScrollAnimation from '../components/ScrollAnimation';
-import '../styles/FinishedProducts.css';
+import { Link } from "react-router-dom";
+import ScrollAnimation from "../components/ScrollAnimation";
+import "../styles/FinishedProducts.css";
 
 // Definición manual del arreglo de productos terminados
 const finishedProducts = [
@@ -10,11 +10,11 @@ const finishedProducts = [
     description: "Virgen maternal, consuelo y fe en México.",
     image: "/images/terminados/1.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
-      "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Molduras ornamentadas  con elegante detalle.",
+      "Dimensiones: 7 x 16 cm",
+      "Corte con láser.",
+      "Materiales premium",
+    ],
   },
   {
     id: 2,
@@ -22,23 +22,23 @@ const finishedProducts = [
     description: "Comida final, preludio de redención y comunión.",
     image: "/images/terminados/2.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
+      "Marco xt73 oro con acetato.",
+      "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Materiales premium",
+    ],
   },
   {
     id: 3,
     title: "Virgen de Guadalupe",
-    description: "Virgen maternal, consuelo y fe en México.",
+    description: "Virgen Sagrado Corazón.",
     image: "/images/terminados/3.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
+      "Marco xt73 oro con acetato.",
+      "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Materiales premium",
+    ],
   },
   {
     id: 4,
@@ -46,11 +46,11 @@ const finishedProducts = [
     description: "Familia divina, unión y amor sagrado eterno..",
     image: "/images/terminados/4.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
+      "Marco xt73 oro con acetato.",
+      "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Materiales premium",
+    ],
   },
   {
     id: 5,
@@ -58,11 +58,11 @@ const finishedProducts = [
     description: "Amor maternal y divino en tierno encuentro.",
     image: "/images/terminados/5.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
+      "Marco xt73 oro con acetato.",
+      "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Materiales premium",
+    ],
   },
   {
     id: 6,
@@ -70,11 +70,11 @@ const finishedProducts = [
     description: "Encarnación de fe y esperanza mexicana",
     image: "/images/terminados/6.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
-      "Tamaños estándar",
-      "Personalización disponible",
-      "Materiales premium"
-    ]
+      "Molduras ornamentadas con elegante detalle.",
+      "Dimensiones: 7 x 16 cm",
+      "Corte con láser.",
+      "Materiales premium",
+    ],
   },
   {
     id: 6,
@@ -82,12 +82,12 @@ const finishedProducts = [
     description: "Milagro que inspira fe y asombro divino.",
     image: "/images/terminados/7.JPG",
     specs: [
-        "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Molduras ornamentadas realzan obra con elegante detalle.",
       "Tamaños estándar",
       "Personalización disponible",
-      "Materiales premium"
-    ]
-  }
+      "Materiales premium",
+    ],
+  },
 ];
 
 export default function FinishedProducts() {
@@ -95,15 +95,11 @@ export default function FinishedProducts() {
     <div className="finished-products-page">
       <h1 className="page-title">Productos Terminados</h1>
       <div className="products-grid">
-        {finishedProducts.map(product => (
+        {finishedProducts.map((product) => (
           <ScrollAnimation key={product.id}>
             <article className="product-card">
               <div className="card-image-container">
-                <img 
-                  src={product.image} 
-                  alt={product.title} 
-                  loading="lazy" 
-                />
+                <img src={product.image} alt={product.title} loading="lazy" />
               </div>
               <div className="card-content">
                 <h3>{product.title}</h3>
