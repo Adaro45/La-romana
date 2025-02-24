@@ -22,7 +22,7 @@ const finishedProducts = [
     description: "Comida final, preludio de redención y comunión.",
     image: "/images/terminados/2.JPG",
     specs: [
-      "Marco xt73 oro con acetato.",
+      "Marco de Venecia oro.",
       "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
       "Materiales premium",
@@ -34,7 +34,7 @@ const finishedProducts = [
     description: "Virgen Sagrado Corazón.",
     image: "/images/terminados/3.JPG",
     specs: [
-      "Marco xt73 oro con acetato.",
+      "Marco de Venecia oro.",
       "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
       "Materiales premium",
@@ -46,7 +46,7 @@ const finishedProducts = [
     description: "Familia divina, unión y amor sagrado eterno..",
     image: "/images/terminados/4.JPG",
     specs: [
-      "Marco xt73 oro con acetato.",
+      "Marco de Venecia oro.",
       "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
       "Materiales premium",
@@ -58,7 +58,7 @@ const finishedProducts = [
     description: "Amor maternal y divino en tierno encuentro.",
     image: "/images/terminados/5.JPG",
     specs: [
-      "Marco xt73 oro con acetato.",
+      "Marco de Venecia oro.",
       "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
       "Materiales premium",
@@ -77,12 +77,12 @@ const finishedProducts = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "El milagro de Jesucristo",
     description: "Milagro que inspira fe y asombro divino.",
     image: "/images/terminados/7.JPG",
     specs: [
-      "Molduras ornamentadas realzan obra con elegante detalle.",
+      "Moldura de Milán Plata con acetato plateado.",
       "Tamaños estándar",
       "Personalización disponible",
       "Materiales premium",

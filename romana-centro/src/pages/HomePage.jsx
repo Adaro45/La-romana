@@ -12,7 +12,7 @@ export default function HomePage() {
               className="logo-image-contact"
             />
             <h2 >"Tu aliado en el arte de enmarcar"</h2>
-        <h1>Materiales y Soluciones para el Laminado y Enmarcado</h1>
+          <h1>Materiales y Soluciones para el Laminado y Enmarcado</h1>
         <div className="cta-buttons">
           <Link to="/productos" className="btn-primary">Ver Catálogo</Link>
           <Link to="/contacto" className="btn-secondary">Contactar Asesor</Link>
@@ -27,7 +27,7 @@ export default function HomePage() {
               { 
                 title: 'Maquinaria',
                 description: 'Equipos profesionales para laminado y enmarque',
-                link: '/herramientas'
+                link: 'productos/herramientas'
               },
               { 
                 title: 'Insumos',
@@ -37,7 +37,7 @@ export default function HomePage() {
               { 
                 title: 'Productos Terminados',
                 description: 'Contacte con nuestros asesores para ver el catálogo disponible',
-                link: '/productos-terminados'
+                link: 'productos/terminados'
               }
             ].map((item) => (
               <Link to={item.link} key={item.title} className="feature-card">

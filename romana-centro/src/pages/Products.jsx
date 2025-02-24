@@ -8,35 +8,35 @@ const products = [
     title: "Florencia",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/florencia.JPG",
-    specs: ["Colores: Vino, Nogal, Oro 89, Titanio, Plata","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Poliestireno"],
+    specs: ["Colores: Vino, Nogal, Bronce, Titanio, Plata","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Precio por barra: 120 MX","Poliestireno"],
   },
   {
     id: 2,
     title: "Romana",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/romana.JPG",
-    specs: ["Colores: Vino, Nogal, Plata, Oro, Oro 89","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Poliestireno"],
+    specs: ["Colores: Vino, Nogal, Plata, Oro, Oro 89","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Precio por barra: 120 MX","Poliestireno"],
   },
   {
     id: 3,
     title: "Nápoles",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/napoles.JPG",
-    specs: ["Colores: Negro, Chocolate, Vino, Nogal,Titanio", "Barra entera (2.9m)", "Caja de 20 barras","Poliestireno"],
+    specs: ["Colores: Negro, Chocolate, Vino, Nogal,Titanio", "Barra entera (2.9m)", "Caja de 24 barras","Precio por barra: 120 MX","Poliestireno"],
   },
   {
     id: 4,
     title: "Milán",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/milan.JPG",
-    specs: ["Colores: Negro, Plata, Bronce", "Barra entera (2.9m)", "Caja de 20 barras","Poliestireno"],
+    specs: ["Colores: Negro, Plata, Bronce", "Barra entera (2.9m)", "Caja de 20 barras","Precio por barra: 120 MX","Poliestireno"],
   },
   {
     id: 5,
     title: "Venecia",
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/Venecia.JPG",
-    specs: ["Colores: Vino, Nogal, Oro 89, Titanio, Plata","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Poliestireno"],
+    specs: ["Colores: Oro","Cortada a medida", "Barra entera (2.9m)", "Caja de 20 barras","Precio por barra: 120 MX","Poliestireno"],
   },
   {
     id: 21,
@@ -129,8 +129,6 @@ const products = [
 export default function Products() {
   return (
     <div className="products-page">
-      <h1 className="page-title">Nuestros Productos</h1>
-
       <div className="products-grid">
         {products.map((product) => (
           <ScrollAnimation key={product.id}>
@@ -151,7 +149,6 @@ export default function Products() {
                     </ul>
                   </div>
                 )}
-
                 <Link to="/contacto" className="card-button">
                   Consultar opciones
                 </Link>
