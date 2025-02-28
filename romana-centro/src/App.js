@@ -6,8 +6,11 @@ import Products from './pages/Products';
 import Tools from './pages/Tools';
 import Contact from './pages/Contact';
 import FinishedProducts from './pages/FinishedProducts';
-import './styles/main.css';
+import Espejos from './pages/Espejos';
+import ArticulosReligiosos from './pages/ArticulosReligiosos';
 import ProductsLayout from './components/ProductsLayout';
+import FinishedProductsLayout from './components/FinishedProductsLayout';
+import './styles/main.css';
 
 export default function App() {
   return (
@@ -19,7 +22,13 @@ export default function App() {
           <Route index element={<Navigate to="molduras" />} />
           <Route path="molduras" element={<Products />} />
           <Route path="herramientas" element={<Tools />} />
-          <Route path="terminados" element={<FinishedProducts />} />
+          {/* La ruta terminados ahora actúa como layout */}
+          <Route path="terminados/*" element={<FinishedProductsLayout />}>
+            {/* Ruta por defecto: todos los terminados */}
+            <Route index element={<FinishedProducts />} />
+            <Route path="espejos" element={<Espejos />} />
+            <Route path="articulos-religiosos" element={<ArticulosReligiosos />} />
+          </Route>
         </Route>
         <Route path="/contacto" element={<Contact />} />
       </Routes>

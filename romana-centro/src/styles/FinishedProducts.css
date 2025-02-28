@@ -1,5 +1,5 @@
 .finished-products-page {
-    padding: 2rem 1rem;
+
     min-height: 100vh;
     background: #fff;
   }
@@ -57,4 +57,10 @@
       right: -35px;
       font-size: 0.7rem;
     }
+    .products-grid{
+      padding: 0;
+    }
+    .finished-products-page{
+      padding: 0;
+    } 
   }

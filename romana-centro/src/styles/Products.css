@@ -1,5 +1,6 @@
 .products-page {
-  padding: 2rem 1rem;
+padding: 0;
+padding-top: 1rem;
   min-height: 100vh;
 }
 
@@ -29,11 +30,40 @@
   display: flex;
   flex-direction: column;
 }
+.product-card::before {
+  content: 'Listo para comprar';
+  position: absolute;
+  top: 45px;
+  right: -35px;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.3rem 2rem;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
 
+.product-card.exclusive::after {
+  content: 'EXCLUSIVO';
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  top: 45px; /* Ajusta este valor para ubicarlo debajo */
+  right: -55px;
+  background: red;
+  color: #fff;
+  padding: 0.3rem 2rem;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
 /* Contenedor de imagen con altura fija */
 .card-image-container {
   height: 50%; /* Altura fija para todas las tarjetas */
   overflow: hidden;
+
 }
 
 .card-image-container img {
@@ -41,6 +71,7 @@
   height: 100%;
   object-fit: scale-down; /* Se recorta para llenar el contenedor */
   transition: transform 0.3s ease;
+ 
 }
 
 .card-content {
@@ -61,6 +92,7 @@
 .card-content ul {
   list-style-type: none;
   margin-bottom: 0.5rem;
+  line-height: 1rem;
 }
 
 .card-content p {

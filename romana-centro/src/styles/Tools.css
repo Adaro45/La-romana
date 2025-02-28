@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 .card-image-container img {
-    filter: brightness(1.0);
+    filter: brightness(1.0) saturate(1.0);
     mix-blend-mode: multiply;
 }
 @media (hover: hover) {

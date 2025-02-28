@@ -54,8 +54,92 @@ const placeholderTools = [
       "Solo 2,5 kg de peso"
     ],
   },
-
-  // Agrega más herramientas aquí...
+  {
+    id: 21,
+    title: "Grapas flexipunta",
+    description: "Grapa flexipunta",
+    image: "/images/grapas/1.jpg",
+    specs: [
+      "Caja con 4300 grapas",
+      "Grapa para ensambladora de marcos",
+      "Garantía del vendedor: 1 meses",
+    ],
+  },
+  {
+    id: 21,
+    title: "Grapas 7mm",
+    description: "Grapa encolada de 7mm",
+    image: "/images/grapas/2.jpg",
+    specs: [
+      "Caja con 4300 grapas",
+      "Grapa para ensambladora de marcos",
+      "Garantía del vendedor: 1 meses",
+    ],
+  },
+  {
+    id: 22,
+    title: "Grapas 10mm",
+    description: "Grapa encolada de 10mm",
+    image: "/images/grapas/2.jpg",
+    specs: [
+      "Caja con 4300 grapas",
+      "Grapa para ensambladora de marcos",
+      "Garantía del vendedor: 1 meses",
+    ],
+  },
+  {
+    id: 23,
+    title: "Grapas 12mm",
+    description: "Grapa encolada de 12mm",
+    image: "/images/grapas/2.jpg",
+    specs: [
+      "Caja con 4300 grapas",
+      "Grapa para ensambladora de marcos",
+      "Garantía del vendedor: 1 meses",
+    ],
+  },
+  {
+    id: 24,
+    title: "MDF",
+    description: "Macocel",
+    image: "/images/grapas/MDF.jpg",
+    specs: ["Perzonabilizable", "Fácil instalación", "Resistente al tiempo"],
+  },
+  {
+    id: 25,
+    title: "Caballete",
+    description: "Caballete Pequeño",
+    image: "/images/grapas/caballetepe.jpg",
+    specs: ["5.9inch 15cm de altura", "Tablero de fibra de madera"],
+  },
+  {
+    id: 26,
+    title: "Caballete",
+    description: "Caballete Mediano",
+    image: "/images/grapas/caballetemed.jpg",
+    specs: ["20inch 50.8cm de altura", "Tablero de madera"],
+  },
+  {
+    id: 27,
+    title: "Caballete",
+    description: "Caballete Grande",
+    image: "/images/grapas/caballetegran.jpg",
+    specs: ["59inch 150cm de altura", "Tablero de madera"],
+  },
+  {
+    id: 28,
+    title: "Cinta Adhesiva Doble Cara Más Adhesivo",
+    description: "Cinta adhesiva doble cara ",
+    image: "/images/grapas/cintadoblecara.jpg",
+    specs: ["Rollo un 1320cm x 5000cm"],
+  },
+  {
+    id: 29,
+    title: "Cinta Adhesiva Doble Cara Más Adhesivo",
+    description: "Cinta adhesiva doble cara ",
+    image: "/images/grapas/cintadoblecara.jpg",
+    specs: ["Rollo un 635cm x 5000cm"],
+  },
 ];
 
 export default function Tools() {

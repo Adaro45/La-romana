@@ -1,0 +1,38 @@
+.mobile-selector {
+    position: sticky;
+    top: 6rem;
+    max-width: 300px;
+    background: #ffffff31;
+    border: 1px solid var(--navy);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .selected-option {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    background-color: var(--off-white);
+  }
+  
+  .options-list {
+    background: #fff;
+    border-top: 1px solid var(--navy);
+  }
+  
+  .option-item {
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #333;
+  }
+  
+  .option-item:hover {
+    background: var(--gold);
+    color: var(--darkchocolate);
+  }
+  
