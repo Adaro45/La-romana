@@ -1,6 +1,7 @@
 .mobile-selector {
     position: sticky;
     top: 6rem;
+    margin-top: 0.5rem;
     max-width: 300px;
     background: #ffffff31;
     border: 1px solid var(--navy);

@@ -1,4 +1,4 @@
-import '../styles/Contact.css';
+import './styles/Contact.css';
 
 export default function Contact() {
   const phoneNumber = "+525648210476";

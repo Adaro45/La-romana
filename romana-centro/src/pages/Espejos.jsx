@@ -1,49 +1,8 @@
 import { Link } from "react-router-dom";
 import ScrollAnimation from "../components/ScrollAnimation";
-import "../styles/Products.css";
+import "./styles/Products.css";
+import { espejos as products} from "../files";
 
-const products = [
-    {
-      id: 1,
-      title: "Espejo dorado y moderno",
-      // type: "Espejos",
-      description: "Espejo dorado y moderno con diseño minimalista.",
-      specs: ["Espejo dorado y moderno", "Diseño minimalista.","Precio por pieza: 60 MXN"],
-      image: "/images/Espejos/1.webp",
-    },
-    {
-      id: 2,
-      title: "Espejo dorado",
-      // type: "Espejos",
-      description: "Espejo dorado con marco contemporáneo.",
-      specs: ["Espejo dorado con marco contemporáneo.","Precio por pieza: 60 MXN"],
-      image: "/images/Espejos/2.webp",
-    },
-    {
-      id: 3,
-      title: "Espejo dorado",
-      // type: "Espejos",
-      description: "Espejo dorado ideal para ambientes modernos.",
-      specs: ["Espejo dorado", "Ideal para ambientes modernos.","Precio por pieza: 60 MXN"],
-      image: "/images/Espejos/3.webp",
-    },
-    {
-      id: 4,
-      title: "Espejo dorado",
-      // type: "Espejos",
-      description: "Diseño moderno en espejo dorado.",
-      specs: ["Diseño moderno en espejo dorado", "Elegante y sutil.","Precio por pieza: 60 MXN"],
-      image: "/images/Espejos/4.webp",
-    },
-    {
-      id: 5,
-      title: "Espejo dorado",
-      // type: "Espejos",
-      description: "Espejo dorado con acabado brillante.",
-      specs: ["Espejo dorado con acabado brillante.","Precio por pieza: 60 MXN"],
-      image: "/images/Espejos/5.webp",
-    },
-  ];
 
 export default function Products() {
   return (

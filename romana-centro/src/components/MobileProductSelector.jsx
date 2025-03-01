@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import "../styles/MobileProductSelector.css";
+import "./styles/MobileProductSelector.css";
 
 const MobileProductSelector = () => {
   // Opciones principales (sin incluir Espejos ni Artículos Religiosos)

@@ -7,7 +7,14 @@
     margin: 0 auto 3rem;
     padding: 0 1.5rem;
 }
-
+.page-title-herramientas {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .tool-card {
     background: white;
     height: 600px;
@@ -66,7 +73,7 @@
 }
 
 @media (max-width: 480px) {
-    .page-title {
+    .page-title-herramientas {
         font-size: 1.8rem;
         padding: 0 1rem;
     }

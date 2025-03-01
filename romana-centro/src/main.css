@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: 'Romanica';
-    src: url('../../public/fonts/Romanica.ttf') format('truetype');
+    src: url('../public/fonts/Romanica.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dalekpinpoint';
-    src: url('../../public/fonts/DalekPinpointBold.ttf') format('opentype');
+    src: url('../public/fonts/DalekPinpointBold.ttf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -22,8 +22,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
-
+a{
+  color: var(--navy);
+}
 body {
     font-family: 'Romanica', sans-serif;
 }

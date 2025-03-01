@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import MobileProductSelector from "../components/MobileProductSelector";
-import "../styles/ProductsLayout.css";
+import "./styles/ProductsLayout.css";
 
 const ProductsLayout = () => {
   const location = useLocation();

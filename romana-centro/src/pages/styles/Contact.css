@@ -13,7 +13,7 @@
 }
 .contact-background{
     background: linear-gradient(rgba(44, 62, 80, 0.679), rgba(44, 62, 80, 0.483)),
-     url('../../public/images/fondo.png') center/cover;
+     url('../../../public/images/fondo.png') center/cover;
     height: 100vh;
 }
 

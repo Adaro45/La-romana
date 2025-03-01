@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/FinishedProducts.css";
+import "./styles/FinishedProducts.css";
 
 export default function FinishedProducts() {
   return (

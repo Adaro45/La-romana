@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
-import "../styles/FinishedProductsLayout.css";
+import "./styles/FinishedProductsLayout.css";
 
 const FinishedProductsLayout = () => {
   const location = useLocation();
