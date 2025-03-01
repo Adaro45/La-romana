@@ -10,7 +10,7 @@ import Espejos from './pages/Espejos';
 import ArticulosReligiosos from './pages/ArticulosReligiosos';
 import ProductsLayout from './components/ProductsLayout';
 import FinishedProductsLayout from './components/FinishedProductsLayout';
-// import ProductDetailPage from './pages/ProductDetailPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import './main.css';
 
 export default function App() {
@@ -30,8 +30,8 @@ export default function App() {
             <Route path="espejos" element={<Espejos />} />
             <Route path="articulos-religiosos" element={<ArticulosReligiosos />} />
           </Route>
-          {/* <Route path="/producto/:id" element={<ProductDetailPage />} /> */}
         </Route>
+          <Route path="/producto/:id" element={<ProductDetailPage />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
     </Layout>

@@ -12,6 +12,7 @@ export default function Tools() {
       <div className="tools-grid">
         {placeholderTools.map((tool) => (
           <ScrollAnimation key={tool.id}>
+            <Link to={`/producto/${tool.id}`} className="product-link">
             <article className="tool-card">
               <div className="card-image-container">
                 <img 
@@ -38,6 +39,7 @@ export default function Tools() {
                 </Link>
               </div>
             </article>
+            </Link>
           </ScrollAnimation>
         ))}
       </div>
