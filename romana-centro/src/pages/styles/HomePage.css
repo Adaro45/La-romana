@@ -11,10 +11,13 @@
     padding: 2rem;
   }
   .features{
-      background:#f8e7c4;   
-  
+      background:#f8e7c4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }  
-  
+
   .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

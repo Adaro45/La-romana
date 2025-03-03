@@ -54,7 +54,6 @@
 
 @media (max-width: 768px) {
     .tools-grid {
-        grid-template-columns: 1fr;
         max-width: 500px;
     }
 
@@ -66,10 +65,6 @@
         font-size: 1.3rem;
     }
 
-    .development-banner {
-        margin-top: 2rem;
-        padding: 2rem 1rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -81,10 +76,6 @@
     .card-button {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
-    }
-
-    .development-banner p:first-child {
-        font-size: 1.2rem;
     }
 
     .banner-button {

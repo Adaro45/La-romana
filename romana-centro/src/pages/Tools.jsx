@@ -25,7 +25,7 @@ export default function Tools() {
                 <h3>{tool.title}</h3>
                 <p>{tool.description}</p>
                 {tool.specs && (
-                  <div className="tool-specs">
+                  <div className="product-specs-card">
                     <h4>Detalles del producto:</h4>
                     <ul>
                       {tool.specs.map((spec, index) => (
@@ -42,14 +42,6 @@ export default function Tools() {
             </Link>
           </ScrollAnimation>
         ))}
-      </div>
-
-      <div className="development-banner">
-        <p>¡Sitio en desarrollo!</p>
-        <p>Estamos ampliando nuestro catálogo. Para más información:</p>
-        <Link to="/contacto" className="banner-button">
-          Contactar a un asesor
-        </Link>
       </div>
     </div>
   );

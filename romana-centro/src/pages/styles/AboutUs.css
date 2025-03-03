@@ -1,0 +1,48 @@
+/* src/pages/styles/AboutUs.css */
+.aboutus-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .aboutus-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .aboutus-header h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+  }
+  
+  .aboutus-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .aboutus-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Ajustes responsive */
+  @media (max-width: 768px) {
+    .aboutus-page {
+      padding: 1rem;
+    }
+    
+    .aboutus-header h1 {
+      font-size: 2rem;
+    }
+    
+    .aboutus-content p {
+      font-size: 1rem;
+    }
+  }
+  

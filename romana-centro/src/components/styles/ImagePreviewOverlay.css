@@ -1,3 +1,4 @@
+/* Overlay principal */
 .overlay {
   position: fixed;
   top: 0;
@@ -11,12 +12,15 @@
   z-index: 2000;
 }
 
+/* Contenedor del contenido del overlay */
 .overlay-content {
   position: relative;
-  max-width: 90%;
+  width: 90%;
+  max-width: 500px;
   max-height: 90%;
 }
 
+/* Botón de cierre */
 .overlay-close {
   position: absolute;
   top: -10px;
@@ -30,63 +34,41 @@
   height: 40px;
 }
 
+/* Imagen principal del overlay */
 .overlay-image {
-  width: 400px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-}
-
-.overlay-content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.overlay-close {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background: #fff;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.overlay-image {
-  width: 400px;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
 }
 
-/* Zoom lens: ventana de zoom en la esquina superior derecha */
+/* Zoom lens para desktop */
 .zoom-lens {
   position: absolute;
-  top: 50px;      /* Ajusta la posición vertical según prefieras */
-  right: -450px;    /* Ajusta la posición horizontal */
-  width: 400px;   /* Tamaño del cuadrado de zoom */
+  top: 10px;
+  right: -420px;
+  width: 400px;
   height: 400px;
   border: 2px solid #fff;
   border-radius: 4px;
   background-repeat: no-repeat;
-  /* El background-size determina el nivel de zoom; ajústalo según convenga */
+  /* Ajusta background-size para controlar el nivel de zoom */
   background-size: 800px auto;
-  pointer-events: none; /* Permite que el mouse siga interactuando con la imagen */
+  pointer-events: none;
   z-index: 10;
+}
+
+/* Responsive: en mobile se oculta el zoom lens y se ajusta el contenedor */
+@media (max-width: 768px) {
+  .overlay-content {
+    max-width: 90%;
+  }
+  
+  .overlay-image {
+    width: 100%;
+  }
+  
+  .zoom-lens {
+    display: none;
+  }
 }

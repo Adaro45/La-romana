@@ -9,6 +9,7 @@ export default function ProductDetailPage() {
   const { id } = useParams(); // ID de la URL
   // Buscamos el producto con el ID correspondiente
   const product = products.find((p) => p.id === parseInt(id));
+  const phoneNumber = "+525648210476";
 
   // Estados para la vista previa de imágenes
   const [previewImage, setPreviewImage] = useState(null);
@@ -17,13 +18,16 @@ export default function ProductDetailPage() {
   // Estado para el contador de unidades
   const [quantity, setQuantity] = useState(1);
 
-  // Obtén precio_unidad y CantXcaja; si no existen, usa 0 para evitar NaN
+  // Extraemos precio_unidad y CantXcaja
   const precioUnidad = product.Precio_unidad;
   const cantXcaja = product.CantXcaja;
 
-  // Calcula el precio total y el precio por caja
-  const totalPrice = quantity * precioUnidad;
-  const pricePerBox = cantXcaja * precioUnidad;
+  // Verificamos si el producto tiene precio asignado
+  const hasPrice = precioUnidad !== undefined && precioUnidad !== null;
+
+  // Calcula el precio total y el precio por caja solo si tiene precio
+  const totalPrice = hasPrice ? quantity * precioUnidad : 0;
+  const pricePerBox = hasPrice ? cantXcaja * precioUnidad : 0;
 
   const handleImageClick = (key, detailUrl) => {
     setPreviewImage(detailUrl);
@@ -56,63 +60,86 @@ export default function ProductDetailPage() {
   }
 
   return (
-    <div className="product-detail-page">
-      <div className="detail-images">
-        <ul>
-          {product.details &&
-            Object.entries(product.details).map(([key, detail]) => (
-              <li key={key} onClick={() => handleImageClick(key, detail)}>
-                <img src={detail} alt={key} className="detail-image" />
-              </li>
-            ))}
-        </ul>
-      </div>
-      <div className="product-images">
-        {/* Imagen principal */}
-        <img src={product.image} alt={product.title} className="main-image" />
-      </div>
-      
-      <div className="product-info">
-        <div className="product-info_details">
-        <div className="product-description">
-        <h1>{product.title}</h1>
-        <p className="description">{product.description}</p>
-
-        {product.specs && (
-          <div className="product-specs">
-            <h4>Detalles del producto:</h4>
-            <ul>
-              {product.specs.map((spec, index) => (
-                <li key={index}>{spec}</li>
+    <div className="product-detail-main-page">
+      <div className="product-detail-page">
+        <div className="product-images-container">
+          
+        <div className="detail-images">
+          <ul>
+            {product.details &&
+              Object.entries(product.details).map(([key, detail]) => (
+                <li key={key} onClick={() => handleImageClick(key, detail)}>
+                  <img src={detail} alt={key} className="detail-image" />
+                </li>
               ))}
-            </ul>
-          </div>
-        )}
-        
-        {/* Componente contador */}
+          </ul>
         </div>
-        <div className="product-counter">
-          <div className="counter-controls">
-            <button className="counter-btn" onClick={handleDecrease}>-</button>
-            <span className="counter-value">{quantity}</span>
-            <button className="counter-btn" onClick={handleIncrease}>+</button>
-          </div>
-          <div className="price-info">
-            <p>Total: {totalPrice} MXN</p>
-            <p>Precio por caja: {pricePerBox} MXN</p>
-          </div>
+        <div className="product-images">
+          {/* Imagen principal */}
+          <img src={product.image} alt={product.title} className="main-image" />
         </div>
-        </div>
-        <div className="product-actions">
-          <Link to="/contacto" className="buy-button">
-            Consultar opciones
-          </Link>
-        </div>
-      </div>
+              </div>
 
-      {previewImage && (
-        <ImagePreviewOverlay imageUrl={previewImage} alt={previewAlt} onClose={closePreview} />
-      )}
+        <div className="product-info">
+          <div className="product-info_details">
+            <div className="product-description">
+              <h1>{product.title}</h1>
+              <p className="description">{product.description}</p>
+
+              {product.specs && (
+                <div className="product-specs">
+                  <h4>Detalles del producto:</h4>
+                  <ul>
+                    {product.specs.map((spec, index) => (
+                      <li key={index}>{spec}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+            <div className="product-counter">
+              <h3>Cantidad de unidades</h3>
+              <div className="counter-controls">
+                <button className="counter-btn" onClick={handleDecrease}>
+                  -
+                </button>
+                <span className="counter-value">{quantity}</span>
+                <button className="counter-btn" onClick={handleIncrease}>
+                  +
+                </button>
+              </div>
+              <div className="price-info">
+                {hasPrice ? (
+                  <>
+                    <p>Total: {totalPrice} MXN</p>
+                    <p>Precio por caja: {pricePerBox} MXN</p>
+                  </>
+                ) : (
+                  <p>Contactar con asesor</p>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="product-actions">
+            <a
+              href={`https://wa.me/${phoneNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="buy-button"
+            >
+              Comprar Ahora
+            </a>
+          </div>
+        </div>
+
+        {previewImage && (
+          <ImagePreviewOverlay
+            imageUrl={previewImage}
+            alt={previewAlt}
+            onClose={closePreview}
+          />
+        )}
+      </div>
     </div>
   );
 }

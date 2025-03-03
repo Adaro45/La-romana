@@ -1,0 +1,123 @@
+    /* FooterSection.css */
+.footer-container {
+    background: var(--navy);
+    color: var(--off-white);
+    padding: 4rem 2rem 2rem;
+  }
+  /* sjh ink */
+  .features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  
+  .feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 2rem 0;
+  }
+  
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-column h4 {
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: var(--off-white);
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: var(--gold);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    .feature-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-links {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+      padding: 3rem 1rem;
+    }
+  }
+  .icon {
+    filter: invert(1);
+  }

@@ -5,6 +5,9 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora350.jpg",
     specs: ["Ancho máximo de laminación 350mm"],
+    details: {
+      zoom: "/images/herramientas/laminadora350.jpg",
+    }
   },
   {
     id: 2,
@@ -12,6 +15,9 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora1000.jpg",
     specs: ["Ancho máximo de laminación 650mm"],
+    details: {
+      zoom: "/images/herramientas/laminadora1000.jpg",
+    },
   },
   {
     id: 3,
@@ -19,6 +25,9 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora650.jpg",
     specs: ["Ancho máximo de laminación 750mm"],
+    details: {
+      zoom: "/images/herramientas/laminadora650.jpg",
+    },
   },
   {
     id: 4,
@@ -26,6 +35,9 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora1000.jpg",
     specs: ["Ancho máximo de laminación 10000mm"],
+    details: {
+      zoom: "/images/herramientas/laminadora1000.jpg",
+    },
   },
   {
     id: 5,
@@ -36,6 +48,9 @@ export const placeholderTools = [
       "Impulsa clavos en V de tamaño 7,10. 12,15mm",
       "Compacto: Con solo 2,5 kg",
     ],
+    details: {
+      zoom: "/images/herramientas/Vnailer.jpg",
+    },
   },
   {
     id: 6,
@@ -47,6 +62,9 @@ export const placeholderTools = [
       "Tiene capacidad para 200 piezas de clavos",
       "Solo 2,5 kg de peso",
     ],
+    details: {
+      zoom: "/images/herramientas/VnailerVerde.jpg",
+    },
   },
   {
     id: 7,
@@ -58,6 +76,9 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    details: {
+      zoom: "/images/grapas/1.jpg",
+    },
   },
   {
     id: 8,
@@ -69,6 +90,9 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    details: {
+      zoom: "/images/grapas/2.jpg",
+    },
   },
   {
     id: 9,
@@ -80,6 +104,9 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    details: {
+      zoom: "/images/grapas/2.jpg",
+    },
   },
   {
     id: 10,
@@ -91,6 +118,9 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    details: {
+      zoom: "/images/grapas/2.jpg",
+    },
   },
   {
     id: 11,
@@ -98,13 +128,20 @@ export const placeholderTools = [
     description: "Macocel",
     image: "/images/grapas/MDF.jpg",
     specs: ["Personalizable", "Fácil instalación", "Resistente al tiempo"],
+    details: {
+      zoom: "/images/grapas/MDF.jpg",
+    },
   },
+
   {
     id: 12,
     title: "Caballete",
     description: "Caballete Pequeño",
     image: "/images/grapas/caballetepe.jpg",
     specs: ["5.9inch 15cm de altura", "Tablero de fibra de madera"],
+    details: {
+      zoom: "/images/grapas/caballetepe.jpg",
+    },
   },
   {
     id: 13,
@@ -112,6 +149,9 @@ export const placeholderTools = [
     description: "Caballete Mediano",
     image: "/images/grapas/caballetemed.jpg",
     specs: ["20inch 50.8cm de altura", "Tablero de madera"],
+    details: {
+      zoom: "/images/grapas/caballetemed.jpg",
+    },
   },
   {
     id: 14,
@@ -119,6 +159,9 @@ export const placeholderTools = [
     description: "Caballete Grande",
     image: "/images/grapas/caballetegran.jpg",
     specs: ["59inch 150cm de altura", "Tablero de madera"],
+    details: {
+      zoom: "/images/grapas/caballetegran.jpg",
+    },
   },
   {
     id: 15,
@@ -126,6 +169,9 @@ export const placeholderTools = [
     description: "Cinta adhesiva doble cara",
     image: "/images/grapas/cintadoblecara.jpg",
     specs: ["Rollo un 1320cm x 5000cm"],
+    details: {
+      zoom: "/images/grapas/cintadoblecara.jpg",
+    },
   },
   {
     id: 16,
@@ -133,6 +179,9 @@ export const placeholderTools = [
     description: "Cinta adhesiva doble cara",
     image: "/images/grapas/cintadoblecara.jpg",
     specs: ["Rollo un 635cm x 5000cm"],
+    details: {
+      zoom: "/images/grapas/cintadoblecara.jpg",
+    },
   },
 ];
 
@@ -143,6 +192,7 @@ export const products = [
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/romana.JPG",
     specs: [
+      "Moldura Exclusiva de Romana Centro",
       "Colores: Vino, Nogal, Plata, Oro, Oro 89",
       "Cortada a medida",
       "Barra entera (2.9m)",
@@ -177,6 +227,16 @@ export const products = [
     Precio_unidad: 120,
     CantXcaja: 17,
     details:{
+      vino:"/images/detalles/florenciavino.JPG",
+      vino_detalle:"/images/detalles/florenciavinodetalle.JPG",
+      nogal:"/images/detalles/florencianogal.JPG",
+      nogal_detalle:"/images/detalles/florencianogaldetalle.JPG",
+      cobre:"/images/detalles/florenciacobre.JPG",
+      cobre_detalle:"/images/detalles/florenciacobredetalle.JPG",
+      titanio:"/images/detalles/florenciatitanio.JPG",
+      titanio_detalle:"/images/detalles/florenciatitaniodetalle.JPG",
+      plata:"/images/detalles/florenciaplata.JPG",
+      plata_detalle:"/images/detalles/florenciaplatadetalle.JPG",
     }
   },
   {
@@ -239,6 +299,8 @@ export const products = [
     Precio_unidad: 120,
     CantXcaja: 26,
     details:{
+      oro:"/images/detalles/venecia.JPG",
+      oro_detalle:"/images/detalles/veneciadetalle.JPG",
     }
   },
 ];
@@ -255,7 +317,9 @@ export const espejos = [
     Precio_unidad: 60,
     CantXcaja: null,
     image: "/images/Espejos/1.webp",
-    details:{}
+    details:{
+      zoom:"/images/Espejos/1.webp",
+    }
   },
   {
     id: 23,
@@ -267,7 +331,9 @@ export const espejos = [
     Precio_unidad: 60,
     CantXcaja: null,
     image: "/images/Espejos/2.webp",
-    details:{}
+    details:{
+      zoom:"/images/Espejos/2.webp",
+    }
 
   },
   {
@@ -278,7 +344,9 @@ export const espejos = [
     Precio_unidad: 60,
     CantXcaja: null,
     image: "/images/Espejos/3.webp",
-    details:{}
+    details:{
+      zoom:"/images/Espejos/3.webp",
+    }
 
   },
   {
@@ -292,7 +360,9 @@ export const espejos = [
     Precio_unidad: 60,
     CantXcaja: null,
     image: "/images/Espejos/4.webp",
-    details:{}
+    details:{
+      zoom:"/images/Espejos/4.webp",
+    }
   },
   {
     id: 26,
@@ -302,7 +372,9 @@ export const espejos = [
     Precio_unidad: 60,
     CantXcaja: null,
     image: "/images/Espejos/5.webp",
-    details:{}
+    details:{
+      zoom:"/images/Espejos/5.webp",
+    }
   },
 ];
 
@@ -319,6 +391,9 @@ export const articulosreligiosos = [
       "Corte con láser.",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/1.JPG",
+    }
   },
   {
     id: 28,
@@ -331,6 +406,9 @@ export const articulosreligiosos = [
       "Personalización disponible",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/2.JPG",
+    },
   },
   {
     id: 29,
@@ -343,6 +421,9 @@ export const articulosreligiosos = [
       "Personalización disponible",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/3.JPG",
+    },
   },
   {
     id: 30,
@@ -355,6 +436,9 @@ export const articulosreligiosos = [
       "Personalización disponible",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/4.JPG",
+    },
   },
   {
     id: 31,
@@ -368,6 +452,9 @@ export const articulosreligiosos = [
       "Personalización disponible",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/5.JPG",
+    },
   },
   {
     id: 32,
@@ -380,6 +467,9 @@ export const articulosreligiosos = [
       "Corte con láser.",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/6.JPG",
+    },
   },
   {
     id: 33,
@@ -392,143 +482,201 @@ export const articulosreligiosos = [
       "Personalización disponible",
       "Materiales premium",
     ],
+    details:{
+      cuadro:"/images/terminados/7.JPG",
+    },
   },
   // "Grandes" (8 items)
   {
     id: 34,
-    title: "Cuadro grande con detalles exquisitos y acabado elegante.",
+    title: "Virgen de Guadalupe",
     description: "Cuadro grande con detalles exquisitos y acabado elegante.",
-    specs: ["Cuadro grande con detalles exquisitos y acabado elegante."],
+    specs: ["Moldura Romana Plata con rosas doradas","Cuadro grande con detalles exquisitos y acabado elegante.","Cuadro de acetato dorado"],
     image: "/images/Grandes/1.webp",
+    details:{
+      cuadro:"/images/Grandes/1.webp",
+    },
   },
+
   {
     id: 35,
-    title: "Marco grande, ornamentado con molduras de lujo.",
+    title: "Virgen de Guadalupe",
     description: "Marco grande, ornamentado con molduras de lujo.",
-    specs: ["Marco grande, ornamentado con molduras de lujo."],
+    specs: ["Moldura Romana Oro89","Marco grande, ornamentado con molduras de lujo."],
     image: "/images/Grandes/2.webp",
+    details:{
+      cuadro:"/images/Grandes/2.webp",
+    },
   },
   {
     id: 36,
-    title: "Diseño elegante en moldura grande, perfecto para obras de arte.",
-    description: "Diseño elegante en moldura grande, perfecto para obras de arte.",
-    specs: ["Diseño elegante en moldura grande, perfecto para obras de arte."],
+    title: "Virgen de Guadalupe",
+    description: "Diseño elegante en moldura grande",
+    specs: ["Diseño elegante en moldura obra de arte.","Marcos dorados y plateados"],
     image: "/images/Grandes/3.webp",
+    details:{
+      cuadro:"/images/Grandes/3.webp",
+    },
   },
   {
     id: 37,
-    title: "Marco de gran tamaño con acabado refinado y detalles elaborados.",
+    title: "Virgen de Guadalupe",
     description:
-      "Marco de gran tamaño con acabado refinado y detalles elaborados.",
+      "Marco de gran tamaño con acabado refinado.",
     specs: [
-      "Marco de gran tamaño con acabado refinado y detalles elaborados.",
+      "Marco de gran tamaño con  detalles elaborados.","Toque Moderno",
     ],
     image: "/images/Grandes/4.webp",
+    details:{
+      cuadro:"/images/Grandes/4.webp",
+    },
   },
   {
     id: 38,
-    title: "Cuadro grande, estilo clásico con toques modernos.",
-    description: "Cuadro grande, estilo clásico con toques modernos.",
-    specs: ["Cuadro grande, estilo clásico con toques modernos."],
+    title: "Virgen de Guadalupe",
+    description: "Cuadro grande, con toques modernos.",
+    specs: ["Cuadro grande, estilo clásico","Decorado con rosas doradas"],
     image: "/images/Grandes/5.webp",
+    details:{
+      cuadro:"/images/Grandes/5.webp",
+    },
   },
   {
     id: 39,
-    title: "Detalle elegante en marco grande, ideal para piezas destacadas.",
+    title: "Arcángel Miguel",
     description:
       "Detalle elegante en marco grande, ideal para piezas destacadas.",
-    specs: ["Detalle elegante en marco grande, ideal para piezas destacadas."],
+    specs: ["Detalle elegante en marco grande, ideal para piezas destacadas.","Moldura Romana"],
     image: "/images/Grandes/6.webp",
+    details:{
+      cuadro:"/images/Grandes/6.webp",
+    },
   },
   {
     id: 40,
-    title: "Acabado elegante en moldura grande, resalta la belleza de la obra.",
+    title: "La creación de Adán",
     description:
-      "Acabado elegante en moldura grande, resalta la belleza de la obra.",
+      "Acabado elegante en moldura grande",
     specs: [
-      "Acabado elegante en moldura grande, resalta la belleza de la obra.",
+      "Acabado elegante resalta la belleza de la obra.", "Moldura Romana Oro89",
     ],
     image: "/images/Grandes/7.webp",
+    details:{
+      cuadro:"/images/Grandes/7.webp",
+    },
   },
   {
     id: 41,
-    title: "Cuadro grande con gran detalle y un toque de modernidad.",
-    description: "Cuadro grande con gran detalle y un toque de modernidad.",
+    title: "Virgen de Guadalupe",
+    description: "Cuadro grande con gran detalle",
     specs: ["Cuadro grande con gran detalle y un toque de modernidad."],
     image: "/images/Grandes/8.webp",
+    details:{
+      cuadro:"/images/Grandes/8.webp",
+    },
   },
   // "Medianos" (10 items)
   {
     id: 42,
-    title: "Cuadro mediana con detalles elegantes y acabado refinado.",
+    title: "El Buen Pastor",
     description: "Cuadro mediana con detalles elegantes y acabado refinado.",
     specs: ["Cuadro mediana con detalles elegantes y acabado refinado."],
     image: "/images/Medianos/1.webp",
+    details:{
+      cuadro:"/images/Medianos/1.webp",
+    },
   },
   {
     id: 43,
-    title: "Marco mediano, diseño sofisticado para realzar cualquier obra.",
+    title: "Virgen de Guadalupe",
     description:
       "Marco mediano, diseño sofisticado para realzar cualquier obra.",
     specs: ["Marco mediano, diseño sofisticado para realzar cualquier obra."],
     image: "/images/Medianos/2.webp",
+    details:{
+      cuadro:"/images/Medianos/2.webp",
+    },
   },
   {
     id: 44,
-    title: "Cuadro mediana, combinando tradición y modernidad.",
+    title: "La última cena",
     description: "Cuadro mediana, combinando tradición y modernidad.",
-    specs: ["Cuadro mediana, combinando tradición y modernidad."],
+    specs: ["Cuadro mediana, combinando tradición y modernidad.","Moldura Venecia"],
     image: "/images/Medianos/3.webp",
+    details:{
+      cuadro:"/images/Medianos/3.webp",
+    },
   },
   {
     id: 45,
-    title: "Detalle sutil en moldura mediana, con acabado elegante.",
+    title: "La última cena",
     description: "Detalle sutil en moldura mediana, con acabado elegante.",
-    specs: ["Detalle sutil en moldura mediana, con acabado elegante."],
+    specs: ["Detalle sutil en moldura mediana, con acabado elegante.","Moldura Venecia"],
     image: "/images/Medianos/4.webp",
+    details:{
+      cuadro:"/images/Medianos/4.webp",
+    },
   },
   {
     id: 46,
-    title: "Marco mediano con un diseño pulido y sofisticado.",
+    title: "Virgen de Guadalupe",
     description: "Marco mediano con un diseño pulido y sofisticado.",
-    specs: ["Marco mediano con un diseño pulido y sofisticado."],
+    specs: ["Marco mediano con un diseño pulido y sofisticado.","Moldura Venecia"],
     image: "/images/Medianos/5.webp",
+    details:{
+      cuadro:"/images/Medianos/5.webp",
+    },
   },
   {
     id: 47,
-    title: "Cuadro mediana, estilo contemporáneo y elegante.",
+    title: "Sagrado Corazón de Jesús",
     description: "Cuadro mediana, estilo contemporáneo y elegante.",
-    specs: ["Cuadro mediana, estilo contemporáneo y elegante."],
+    specs: ["Cuadro mediana, estilo contemporáneo y elegante.","Moldura Venecia"],
     image: "/images/Medianos/6.webp",
+    details:{
+      cuadro:"/images/Medianos/6.webp",
+    },
   },
   {
     id: 48,
-    title: "Detalle ornamental en marco mediano, acabado de alta calidad.",
+    title: "Virgen de Guadalupe",
     description:
       "Detalle ornamental en marco mediano, acabado de alta calidad.",
     specs: ["Detalle ornamental en marco mediano, acabado de alta calidad."],
     image: "/images/Medianos/7.webp",
+    details:{
+      cuadro:"/images/Medianos/7.webp",
+    },
   },
   {
     id: 49,
-    title: "Diseño elegante en moldura mediana, con gran precisión.",
+    title: "Virgen de Guadalupe",
     description: "Diseño elegante en moldura mediana, con gran precisión.",
     specs: ["Diseño elegante en moldura mediana, con gran precisión."],
     image: "/images/Medianos/8.webp",
+    details:{
+      cuadro:"/images/Medianos/8.webp",
+    },
   },
   {
     id: 50,
-    title: "Marco mediano, perfecto para realzar la belleza de la obra.",
+    title: "El milagro de Cristo",
     description: "Marco mediano, perfecto para realzar la belleza de la obra.",
     specs: ["Marco mediano, perfecto para realzar la belleza de la obra."],
     image: "/images/Medianos/9.webp",
+    details:{
+      cuadro:"/images/Medianos/9.webp",
+    },
   },
   {
     id: 51,
-    title: "Cuadro mediana con un acabado impecable y detalles sutiles.",
+    title: "El milagro de Cristo",
     description: "Cuadro mediana con un acabado impecable y detalles sutiles.",
-    specs: ["Cuadro mediana con un acabado impecable y detalles sutiles."],
+    specs: ["Cuadro mediana con un acabado impecable y detalles sutiles.","Moldura Romana Plata"],
     image: "/images/Medianos/10.webp",
+    details:{
+      cuadro:"/images/Medianos/10.webp",
+    },
   },
   // "Pequeños" (14 items)
   {
@@ -537,98 +685,140 @@ export const articulosreligiosos = [
     description: "Cuadro pequeña, con diseño elegante y moderno.",
     specs: ["Cuadro pequeña, con diseño elegante y moderno."],
     image: "/images/Pequeños/1.webp",
+    details:{
+      cuadro:"/images/Pequeños/1.webp",
+    },
   },
   {
     id: 53,
-    title: "Marco pequeño, detalles exquisitos en acabado dorado.",
+    title: "Virgen de Guadalupe",
     description: "Marco pequeño, detalles exquisitos en acabado dorado.",
     specs: ["Marco pequeño, detalles exquisitos en acabado dorado."],
     image: "/images/Pequeños/2.webp",
+    details:{
+      cuadro:"/images/Pequeños/2.webp",
+    },
   },
   {
     id: 54,
-    title: "Cuadro pequeña, perfecta para obras de arte íntimas.",
+    title: "Sagrado Corazón de Jesús",
     description: "Cuadro pequeña, perfecta para obras de arte íntimas.",
     specs: ["Cuadro pequeña, perfecta para obras de arte íntimas."],
     image: "/images/Pequeños/3.webp",
+    details:{
+      cuadro:"/images/Pequeños/3.webp",
+    },
   },
   {
     id: 55,
-    title: "Diseño moderno en moldura pequeña, con acabados de alta calidad.",
+    title: "Divina Misericordia",
     description:
       "Diseño moderno en moldura pequeña, con acabados de alta calidad.",
     specs: ["Diseño moderno en moldura pequeña, con acabados de alta calidad."],
     image: "/images/Pequeños/4.webp",
+    details:{
+      cuadro:"/images/Pequeños/4.webp",
+    },
   },
   {
     id: 56,
-    title: "Marco pequeño, estilo elegante y sofisticado.",
+    title: "Divina Misericordia",
     description: "Marco pequeño, estilo elegante y sofisticado.",
     specs: ["Marco pequeño, estilo elegante y sofisticado."],
     image: "/images/Pequeños/5.webp",
+    details:{
+      cuadro:"/images/Pequeños/5.webp",
+    },
   },
   {
     id: 57,
-    title: "Cuadro pequeña con acabado dorado, realza la decoración.",
+    title: "Virgen de Guadalupe",
     description: "Cuadro pequeña con acabado dorado, realza la decoración.",
     specs: ["Cuadro pequeña con acabado dorado, realza la decoración."],
     image: "/images/Pequeños/6.webp",
+    details:{
+      cuadro:"/images/Pequeños/6.webp",
+    },
   },
   {
     id: 58,
-    title: "Detalle elegante en moldura pequeña, con un toque moderno.",
+    title: "San Francisco de Asís",
     description: "Detalle elegante en moldura pequeña, con un toque moderno.",
     specs: ["Detalle elegante en moldura pequeña, con un toque moderno."],
     image: "/images/Pequeños/7.webp",
+    details:{
+      cuadro:"/images/Pequeños/7.webp",
+    },
   },
   {
     id: 59,
-    title: "Marco pequeño, acabado refinado y detalle ornamental.",
+    title: "Virgen de Guadalupe",
     description: "Marco pequeño, acabado refinado y detalle ornamental.",
     specs: ["Marco pequeño, acabado refinado y detalle ornamental."],
     image: "/images/Pequeños/8.webp",
+    details:{
+      cuadro:"/images/Pequeños/8.webp",
+    },
   },
   {
     id: 60,
-    title: "Cuadro pequeña, diseño minimalista y elegante.",
+    title: "Divina Misericordia",
     description: "Cuadro pequeña, diseño minimalista y elegante.",
-    specs: ["Cuadro pequeña, diseño minimalista y elegante."],
+    specs: ["Cuadro pequeño, diseño minimalista y elegante."],
     image: "/images/Pequeños/9.webp",
+    details:{
+      cuadro:"/images/Pequeños/9.webp",
+    },
   },
   {
     id: 61,
-    title: "Detalle sutil en marco pequeño, con acabado dorado.",
+    title: "San Judas Tadeo",
     description: "Detalle sutil en marco pequeño, con acabado dorado.",
     specs: ["Detalle sutil en marco pequeño, con acabado dorado."],
     image: "/images/Pequeños/10.webp",
+    details:{
+      cuadro:"/images/Pequeños/10.webp",
+    },
   },
   {
     id: 62,
-    title: "Cuadro pequeña con diseño exclusivo y elegante.",
-    description: "Cuadro pequeña con diseño exclusivo y elegante.",
+    title: "Arcángel San Miguel",
+    description: "Cuadro pequeño con diseño exclusivo y elegante.",
     specs: ["Cuadro pequeña con diseño exclusivo y elegante."],
     image: "/images/Pequeños/11.webp",
+    details:{
+      cuadro:"/images/Pequeños/11.webp",
+    },
   },
   {
     id: 63,
-    title: "Marco pequeño, detalles modernos y sofisticados.",
+    title: "Snan Judas Tadeo",
     description: "Marco pequeño, detalles modernos y sofisticados.",
     specs: ["Marco pequeño, detalles modernos y sofisticados."],
     image: "/images/Pequeños/12.webp",
+    details:{
+      cuadro:"/images/Pequeños/12.webp",
+    },
   },
   {
     id: 64,
-    title: "Cuadro pequeña, perfecta para piezas de arte delicadas.",
-    description: "Cuadro pequeña, perfecta para piezas de arte delicadas.",
-    specs: ["Cuadro pequeña, perfecta para piezas de arte delicadas."],
+    title: "Virgen de Guadalupe",
+    description: "Cuadro pequeño, perfecta para piezas de arte delicadas.",
+    specs: ["Detalle pequeño, perfecta para piezas de arte delicadas."],
     image: "/images/Pequeños/13.webp",
+    details:{
+      cuadro:"/images/Pequeños/13.webp",
+    },
   },
   {
     id: 65,
-    title: "Detalle ornamental en moldura pequeña, con acabado de lujo.",
+    title: "Sagrada Familia",
     description: "Detalle ornamental en moldura pequeña, con acabado de lujo.",
     specs: ["Detalle ornamental en moldura pequeña, con acabado de lujo."],
-    image: "/images/Pequeños/14.webp",
+    image: "/images>/Pequeños/14.webp",
+    details:{
+      cuadro:"/images/Pequeños/14.webp",
+    },
   },
 ];
 export const allProducts = [
@@ -636,4 +826,76 @@ export const allProducts = [
   ...products,
   ...espejos,
   ...articulosreligiosos,
+];
+export const terminados = [
+  ...espejos,
+  ...articulosreligiosos,
+];
+
+export const detailsmolduras = [{
+  id: 1,
+  title: "Romana",
+  description: "Romana Vino",
+  image: "/images/detalles/SS/romanavinodetalle.JPG",
+},
+{
+  id: 2,
+  title: "Romana",
+  description: "Romana Nogal",
+  image: "/images/detalles/SS/romananogaldetalle.JPG",
+},
+{
+  id: 3,
+  title: "Romana",
+  description: "Romana Plata",
+  image: "/images/detalles/SS/romanaplatadetalle.JPG",
+},
+{
+  id: 4,
+  title: "Romana",
+  description: "Romana Oro",
+  image: "/images/detalles/SS/romanaorodetalle.JPG",
+},
+{
+  id: 5,
+  title: "Romana",
+  description: "Romana Oro 89",
+  image: "/images/detalles/SS/romanaoro89detalle.JPG",
+},
+{
+  id: 7,
+  title: "Florencia",
+  description: "Florencia vino",
+  image: "/images/detalles/SS/florenciavinodetalle.JPG",
+},
+{
+  id: 8,
+  title: "Florencia",
+  description: "Florencia Nogal",
+  image: "/images/detalles/SS/florencianogaldetalle.JPG",
+},
+{
+  id: 9,
+  title: "Florencia",
+  description: "Florencia Cobre",
+  image: "/images/detalles/SS/florenciacobredetalle.JPG",
+},
+{
+  id: 10,
+  title: "Florencia",
+  description: "Florencia Plata",
+  image: "/images/detalles/SS/florenciaplatadetalle.JPG",
+},
+{
+  id: 11,
+  title: "Florencia",
+  description: "Florencia Titanio",
+  image: "/images/detalles/SS/florenciatitaniodetalle.JPG",
+},
+{
+  id: 12,
+  title: "Venecia",
+  description: "Venecia Oro",
+  image: "/images/detalles/SS/florenciaveneciadetalle.JPG",
+},
 ];

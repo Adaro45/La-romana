@@ -15,25 +15,29 @@ padding-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  max-width: 90%;
   margin: 0 auto 3rem;
   padding: 1rem;
 }
-
+.product-specs-card{
+  margin-top: 0;
+  margin-bottom: auto;
+}
 .product-card {
   height: 600px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: var(--off-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--gold);
 }
 .product-card::before {
   content: 'Listo para comprar';
   position: absolute;
-  top: 45px;
+  top: 35px;
   right: -35px;
   background: var(--gold);
   color: var(--navy);
@@ -98,7 +102,6 @@ padding-top: 1rem;
 .card-content p {
   color: #666;
   font-size: 0.9rem;
-  flex-grow: 1;
 }
 
 .card-button {
@@ -110,16 +113,11 @@ padding-top: 1rem;
   border-radius: 8px;
   font-weight: bold;
   text-align: center;
+  border: none;
   transition: all 0.3s ease;
 }
 
-.development-banner {
-  background: var(--navy);
-  color: var(--off-white);
-  text-align: center;
-  padding: 2rem 1rem;
-  bottom: 0;
-}
+
 
 .banner-button {
   display: inline-block;
@@ -154,7 +152,6 @@ padding-top: 1rem;
 /* Mobile Styles */
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   .products-page{
@@ -170,10 +167,7 @@ padding-top: 1rem;
     padding: 0.8rem;
   }
   
-  .development-banner {
-    position: static;
-    margin-top: 2rem;
-  }
+
 }
 
 @media (max-width: 480px) {

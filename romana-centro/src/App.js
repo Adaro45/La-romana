@@ -5,16 +5,17 @@ import HomePage from './pages/HomePage';
 import Products from './pages/Products';
 import Tools from './pages/Tools';
 import Contact from './pages/Contact';
-import FinishedProducts from './pages/FinishedProducts';
 import Espejos from './pages/Espejos';
 import ArticulosReligiosos from './pages/ArticulosReligiosos';
 import ProductsLayout from './components/ProductsLayout';
 import FinishedProductsLayout from './components/FinishedProductsLayout';
 import ProductDetailPage from './pages/ProductDetailPage';
+import FooterSection from './components/FooterSection';
+import AboutUs from './pages/AboutUs';
 import './main.css';
-
 export default function App() {
   return (
+    <>
     <Layout>
       <ScrollToTop/>
       <Routes>
@@ -26,14 +27,16 @@ export default function App() {
           {/* La ruta terminados ahora actúa como layout */}
           <Route path="terminados/*" element={<FinishedProductsLayout />}>
             {/* Ruta por defecto: todos los terminados */}
-            <Route index element={<FinishedProducts />} />
             <Route path="espejos" element={<Espejos />} />
             <Route path="articulos-religiosos" element={<ArticulosReligiosos />} />
           </Route>
         </Route>
           <Route path="/producto/:id" element={<ProductDetailPage />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="/nosotros" element={<AboutUs />} />
       </Routes>
     </Layout>
+    <FooterSection/>
+    </>
   );
 }

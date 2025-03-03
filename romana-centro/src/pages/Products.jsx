@@ -23,7 +23,7 @@ export default function Products() {
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
                 {product.specs && (
-                  <div className="product-specs">
+                  <div className="product-specs-card">
                     <h4>Detalles del producto:</h4>
                     <ul>
                       {product.specs.map((spec, index) => (
@@ -48,18 +48,6 @@ export default function Products() {
             </article>
           </ScrollAnimation>
         ))}
-      </div>
-
-      {/* Banner final */}
-      <div className="development-banner">
-        <p>¡Sitio en desarrollo!</p>
-        <p>Estamos ampliando nuestro catálogo. Para más información:</p>
-        <button
-          className="banner-button"
-          onClick={() => navigate("/contacto")}
-        >
-          Contactar a un asesor
-        </button>
       </div>
     </div>
   );

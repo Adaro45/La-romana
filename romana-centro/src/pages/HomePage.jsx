@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 import './styles/HomePage.css';
+import SlideShowSection from "../components/SlideShowSection";
+import {products as molduras,detailsmolduras, placeholderTools as herramientas, terminados } from "../files";
 
 export default function HomePage() {
   return (
@@ -19,35 +21,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ScrollAnimation>
-        <section className="features">
-          <h2>¿Qué Ofrecemos?</h2>
-          <div className="feature-grid">
-            {[
-              { 
-                title: 'Maquinaria',
-                description: 'Equipos profesionales para laminado y enmarque',
-                link: 'productos/herramientas'
-              },
-              { 
-                title: 'Insumos',
-                description: 'Materiales especializados de alta calidad',
-                link: '/productos?category=insumos'
-              },
-              { 
-                title: 'Productos Terminados',
-                description: 'Contacte con nuestros asesores para ver el catálogo disponible',
-                link: 'productos/terminados'
-              }
-            ].map((item) => (
-              <Link to={item.link} key={item.title} className="feature-card">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </Link>
-            ))}
-          </div>
+      <section className="features">
+          <h2>Descubre Nuestro Catálogo</h2>
+          {/* Slide para Molduras (Insumos) */}
+          <SlideShowSection
+            category="Molduras"
+            items={detailsmolduras}
+            description="Explora nuestra amplia selección de molduras de alta calidad para enmarcados."
+            buttonLabel="Ver Molduras"
+            buttonLink="/productos/molduras"
+            reverse={false}
+          />
+          {/* Slide para Herramientas (Maquinaria) */}
+          <SlideShowSection
+            category="Herramientas"
+            items={herramientas}
+            description="Conoce nuestra maquinaria especializada para laminado y enmarcado."
+            buttonLabel="Ver Herramientas"
+            buttonLink="/productos/herramientas"
+            reverse={true}
+          />
+          {/* Slide para Productos Terminados */}
+          <SlideShowSection
+            category="Productos Terminados"
+            items={terminados}
+            description="Descubre nuestros productos terminados, listos para embellecer tus espacios."
+            buttonLabel="Ver Productos Terminados"
+            buttonLink="/productos/terminados"
+            reverse={false}
+          />
         </section>
-      </ScrollAnimation>
     </div>
   );
 }
