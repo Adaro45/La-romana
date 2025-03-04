@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import ScrollAnimation from '../components/ScrollAnimation';
 import './styles/HomePage.css';
-import SlideShowSection from "../components/SlideShowSection";
-import {products as molduras,detailsmolduras, placeholderTools as herramientas, terminados } from "../files";
-
+import {detailsmolduras, placeholderTools as herramientas, terminados } from "../files";
+import ScrollAnimation from "../components/ScrollAnimation";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { lazy, Suspense } from 'react';
+const SlideShowSection = lazy(() => import("../components/SlideShowSection"));
 export default function HomePage() {
   return (
     <div className="home-container">
       <section className="hero">
-      <img 
+        <LazyLoadImage
               src="/images/log.png" 
               alt="Romana Centro" 
               className="logo-image-contact"
@@ -22,7 +23,9 @@ export default function HomePage() {
       </section>
 
       <section className="features">
+        <ScrollAnimation>
           <h2>Descubre Nuestro Catálogo</h2>
+          <Suspense fallback={<div className="loading-slides">Cargando...</div>}>
           {/* Slide para Molduras (Insumos) */}
           <SlideShowSection
             category="Molduras"
@@ -32,7 +35,9 @@ export default function HomePage() {
             buttonLink="/productos/molduras"
             reverse={false}
           />
+          </Suspense>
           {/* Slide para Herramientas (Maquinaria) */}
+          <Suspense fallback={<div className="loading-slides">Cargando...</div>}>
           <SlideShowSection
             category="Herramientas"
             items={herramientas}
@@ -41,7 +46,11 @@ export default function HomePage() {
             buttonLink="/productos/herramientas"
             reverse={true}
           />
+          </Suspense>
+
           {/* Slide para Productos Terminados */}
+          <Suspense fallback={<div className="loading-slides">Cargando...</div>}>
+
           <SlideShowSection
             category="Productos Terminados"
             items={terminados}
@@ -50,6 +59,9 @@ export default function HomePage() {
             buttonLink="/productos/terminados"
             reverse={false}
           />
+          </Suspense>
+          
+        </ScrollAnimation>
         </section>
     </div>
   );
