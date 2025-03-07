@@ -1,9 +1,30 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../main.css';
 
 export default function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navLinksRef = useRef(null);
+  const hamburgerRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (isMenuOpen) {
+        // Si el click NO está dentro del contenedor de links ni en el botón, se cierra el menú
+        if (
+          navLinksRef.current &&
+          !navLinksRef.current.contains(e.target) &&
+          hamburgerRef.current &&
+          !hamburgerRef.current.contains(e.target)
+        ) {
+          setIsMenuOpen(false);
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -18,6 +39,7 @@ export default function Layout({ children }) {
           </Link>
           
           <button 
+            ref={hamburgerRef}
             className={`hamburger ${isMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -26,7 +48,7 @@ export default function Layout({ children }) {
             <span className="bar"></span>
           </button>
 
-          <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <div ref={navLinksRef} className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <Link to="/" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
             <Link to="/productos" onClick={() => setIsMenuOpen(false)}>Productos</Link>
             <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>Contacto</Link>

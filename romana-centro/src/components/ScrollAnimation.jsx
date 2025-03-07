@@ -33,7 +33,7 @@ export default function ScrollAnimation({ children }) {
         opacity: 0,
         transform: 'translateY(20px)',
         transition: 'all 0.6s ease-out',
-        width: '90%',
+        width: '100%',
         margin: '0'
       }}
     >
