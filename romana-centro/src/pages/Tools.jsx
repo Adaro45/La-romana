@@ -7,8 +7,6 @@ import { placeholderTools } from '../files';
 export default function Tools() {
   return (
     <div className="tools-page">
-      <h1 className="page-title-herramientas">Nuestras Herramientas</h1>
-
       <div className="tools-grid">
         {placeholderTools.map((tool) => (
           <ScrollAnimation key={tool.id}>

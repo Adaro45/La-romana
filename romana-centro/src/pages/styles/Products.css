@@ -1,200 +1,132 @@
 .products-page {
-padding: 0;
-padding-top: 1rem;
+  padding: var(--space-lg) var(--space-md);
   min-height: 100vh;
+  background: var(--background);
 }
 
-.page-title {
-  text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
+.products-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bright-white);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-md) var(--space-md) var(--space-md) var(--space-xl);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.filter-container label {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.filter-select {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bright-white);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin: 0 auto 3rem;
-  padding: 1rem;
-}
-.product-specs-card{
-  margin-top: 0;
-  margin-bottom: auto;
-}
-.product-card {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  background: var(--off-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  position: relative;
-  border: 2px solid var(--gold);
-}
-.product-card::before {
-  content: 'Listo para comprar';
-  position: absolute;
-  top: 35px;
-  right: -35px;
-  background: var(--gold);
-  color: var(--navy);
-  padding: 0.3rem 2rem;
-  transform: rotate(45deg);
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 1;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin: 0 auto;
 }
 
-.product-card.exclusive::after {
-  content: 'EXCLUSIVO';
-  position: absolute;
-  width: 200px;
+.no-results {
   text-align: center;
-  top: 45px; /* Ajusta este valor para ubicarlo debajo */
-  right: -55px;
-  background: red;
-  color: #fff;
-  padding: 0.3rem 2rem;
-  transform: rotate(45deg);
-  font-size: 0.8rem;
-  font-weight: bold;
-  z-index: 1;
-}
-/* Contenedor de imagen con altura fija */
-.card-image-container {
-  height: 50%; /* Altura fija para todas las tarjetas */
-  overflow: hidden;
-
+  padding: var(--space-xxl) var(--space-xl);
+  background: var(--bright-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  color: var(--text-secondary);
 }
 
-.card-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down; /* Se recorta para llenar el contenedor */
-  transition: transform 0.3s ease;
- 
+.no-results svg {
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
 }
 
-.card-content {
-  padding: 1.5rem;
-  margin: 0 0.5rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  height: 50%;
+.no-results h3 {
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
 }
 
-.card-content h3 {
-  color: var(--navy);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-content ul {
-  list-style-type: none;
-  margin-bottom: 0.5rem;
-  line-height: 1rem;
-}
-
-.card-content p {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.card-button {
-  display: inline-block;
-  background: var(--gold);
-  color: var(--navy);
-  text-decoration: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-align: center;
+.reset-filters {
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--navy);
+  color: var(--bright-white);
   border: none;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-medium);
 }
-.cart-button{
-  display: inline-block;
+
+.reset-filters:hover {
   background: var(--gold);
   color: var(--navy);
-  text-decoration: none;
-  padding: 0.6rem 1.5rem;
-  margin: auto;
-  margin-bottom: 0.5rem;
-  width: 80%;
-  margin-top: 0;
-  border-radius: 8px;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-  transition: all 0.3s ease;
 }
 
-
-.banner-button {
-  display: inline-block;
-  background: var(--gold);
-  color: var(--navy);
-  text-decoration: none;
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  font-weight: bold;
-  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-/* Hover Effects */
-@media (hover: hover) {
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
-  .banner-button:hover {
-    transform: translateY(-5px);
-  }
-  .card-image-container:hover img {
-    transform: scale(1.05);
-  }
-  .cart-button:hover,.card-button:hover {
-    background: #e0b52e;
-    transform: scale(1.05);
-  }
-  
-}
-
-/* Mobile Styles */
 @media (max-width: 768px) {
-  .products-grid {
-    gap: 1.5rem;
+  .products-filters {
+    flex-direction: column;
+    align-items: stretch;
   }
-  .products-page{
-    margin: 1rem;
-    margin-top: 0;
-  }
-  .card-content {
-    padding: 1rem;
-  }
-  
-  .card-button {
-    width: 100%;
-    padding: 0.8rem;
-  }
-  
 
-}
-
-@media (max-width: 480px) {
-  .page-title {
-    font-size: 1.75rem;
-  }
-  .card-content{
-    height: auto;
-  }
-  .card-content h3 {
-    font-size: 1.1rem;
-  }
-  
-  .banner-button {
+  .filter-container {
     width: 100%;
   }
+
+  .filter-select {
+    flex: 1;
+  }
 }
+
