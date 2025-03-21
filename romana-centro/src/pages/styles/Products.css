@@ -6,9 +6,7 @@ padding-top: 1rem;
 
 .page-title {
   text-align: center;
-  color: var(--navy);
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 2rem;
 }
 
 .products-grid {
@@ -116,7 +114,22 @@ padding-top: 1rem;
   border: none;
   transition: all 0.3s ease;
 }
-
+.cart-button{
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-top: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  transition: all 0.3s ease;
+}
 
 
 .banner-button {
@@ -142,7 +155,7 @@ padding-top: 1rem;
   .card-image-container:hover img {
     transform: scale(1.05);
   }
-  .card-button:hover {
+  .cart-button:hover,.card-button:hover {
     background: #e0b52e;
     transform: scale(1.05);
   }

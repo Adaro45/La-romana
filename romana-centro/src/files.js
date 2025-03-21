@@ -450,7 +450,7 @@ export const articulosreligiosos = [
       "Dimensiones: 25 x 35.5 cm",
       "Personalización disponible",
       "Materiales premium",
-    ],
+    ],// eslint-disable-next-line
     details:{
       cuadro:"/images/terminados/5.webp",
     },
@@ -578,8 +578,8 @@ export const articulosreligiosos = [
   {
     id: 42,
     title: "El Buen Pastor",
-    description: "Cuadro mediana con detalles elegantes y acabado refinado.",
-    specs: ["Cuadro mediana con detalles elegantes y acabado refinado."],
+    description: "Cuadro mediano con detalles elegantes y acabado refinado.",
+    specs: ["Cuadro mediano con detalles elegantes y acabado refinado."],
     image: "/images/Medianos/1.webp",
     details:{
       cuadro:"/images/Medianos/1.webp",
@@ -599,8 +599,8 @@ export const articulosreligiosos = [
   {
     id: 44,
     title: "La última cena",
-    description: "Cuadro mediana, combinando tradición y modernidad.",
-    specs: ["Cuadro mediana, combinando tradición y modernidad.","Moldura Venecia"],
+    description: "Cuadro mediano, combinando tradición y modernidad.",
+    specs: ["Cuadro mediano, combinando tradición y modernidad.","Moldura Venecia"],
     image: "/images/Medianos/3.webp",
     details:{
       cuadro:"/images/Medianos/3.webp",
@@ -629,8 +629,8 @@ export const articulosreligiosos = [
   {
     id: 47,
     title: "Sagrado Corazón de Jesús",
-    description: "Cuadro mediana, estilo contemporáneo y elegante.",
-    specs: ["Cuadro mediana, estilo contemporáneo y elegante.","Moldura Venecia"],
+    description: "Cuadro mediano, estilo contemporáneo y elegante.",
+    specs: ["Cuadro mediano, estilo contemporáneo y elegante.","Moldura Venecia"],
     image: "/images/Medianos/6.webp",
     details:{
       cuadro:"/images/Medianos/6.webp",
@@ -670,8 +670,8 @@ export const articulosreligiosos = [
   {
     id: 51,
     title: "El milagro de Cristo",
-    description: "Cuadro mediana con un acabado impecable y detalles sutiles.",
-    specs: ["Cuadro mediana con un acabado impecable y detalles sutiles.","Moldura Romana Plata"],
+    description: "Cuadro mediano con un acabado impecable y detalles sutiles.",
+    specs: ["Cuadro mediano con un acabado impecable y detalles sutiles.","Moldura Romana Plata"],
     image: "/images/Medianos/10.webp",
     details:{
       cuadro:"/images/Medianos/10.webp",
@@ -681,8 +681,8 @@ export const articulosreligiosos = [
   {
     id: 52,
     title: "Cuadro pequeña, con diseño elegante y moderno.",
-    description: "Cuadro pequeña, con diseño elegante y moderno.",
-    specs: ["Cuadro pequeña, con diseño elegante y moderno."],
+    description: "Cuadro pequeño, con diseño elegante y moderno.",
+    specs: ["Cuadro pequeño, con diseño elegante y moderno."],
     image: "/images/Pequeños/1.webp",
     details:{
       cuadro:"/images/Pequeños/1.webp",
@@ -701,8 +701,8 @@ export const articulosreligiosos = [
   {
     id: 54,
     title: "Sagrado Corazón de Jesús",
-    description: "Cuadro pequeña, perfecta para obras de arte íntimas.",
-    specs: ["Cuadro pequeña, perfecta para obras de arte íntimas."],
+    description: "Cuadro pequeño, perfecto para obras de arte íntimas.",
+    specs: ["Cuadro pequeño, perfecto para obras de arte íntimas."],
     image: "/images/Pequeños/3.webp",
     details:{
       cuadro:"/images/Pequeños/3.webp",
@@ -732,8 +732,8 @@ export const articulosreligiosos = [
   {
     id: 57,
     title: "Virgen de Guadalupe",
-    description: "Cuadro pequeña con acabado dorado, realza la decoración.",
-    specs: ["Cuadro pequeña con acabado dorado, realza la decoración."],
+    description: "Cuadro pequeño con acabado dorado, realza la decoración.",
+    specs: ["Cuadro pequeño con acabado dorado, realza la decoración."],
     image: "/images/Pequeños/6.webp",
     details:{
       cuadro:"/images/Pequeños/6.webp",
@@ -762,7 +762,7 @@ export const articulosreligiosos = [
   {
     id: 60,
     title: "Divina Misericordia",
-    description: "Cuadro pequeña, diseño minimalista y elegante.",
+    description: "Cuadro pequeño, diseño minimalista y elegante.",
     specs: ["Cuadro pequeño, diseño minimalista y elegante."],
     image: "/images/Pequeños/9.webp",
     details:{
@@ -802,7 +802,7 @@ export const articulosreligiosos = [
   {
     id: 64,
     title: "Virgen de Guadalupe",
-    description: "Cuadro pequeño, perfecta para piezas de arte delicadas.",
+    description: "Cuadro pequeño, perfecto para piezas de arte delicadas.",
     specs: ["Detalle pequeño, perfecta para piezas de arte delicadas."],
     image: "/images/Pequeños/13.webp",
     details:{
@@ -814,7 +814,7 @@ export const articulosreligiosos = [
     title: "Sagrada Familia",
     description: "Detalle ornamental en moldura pequeña, con acabado de lujo.",
     specs: ["Detalle ornamental en moldura pequeña, con acabado de lujo."],
-    image: "/images>/Pequeños/14.webp",
+    image: "/images/Pequeños/14.webp",
     details:{
       cuadro:"/images/Pequeños/14.webp",
     },

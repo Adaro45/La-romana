@@ -3,17 +3,22 @@ import { useNavigate } from "react-router-dom";
 import ScrollAnimation from "../components/ScrollAnimation";
 import "./styles/Products.css";
 import { products } from "../files";
+import Cart from "../components/Cart";
+import { useCart } from "../context/CartContext";
 
 export default function Products() {
   const navigate = useNavigate();
-
+  const { addToCart } = useCart();
   return (
     <div className="products-page">
+      <Cart />
       <div className="products-grid">
         {products.map((product) => (
           <ScrollAnimation key={product.id}>
             <article
-              className={`product-card ${product.title === "Romana" ? "exclusive" : ""}`}
+              className={`product-card ${
+                product.title === "Romana" ? "exclusive" : ""
+              }`}
               onClick={() => navigate(`/producto/${product.id}`)}
             >
               <div className="card-image-container">
@@ -34,7 +39,6 @@ export default function Products() {
                     </ul>
                   </div>
                 )}
-                {/* El botón de consultar se renderiza sin anidarse en otro Link */}
                 <button
                   className="card-button"
                   onClick={(e) => {
@@ -45,6 +49,14 @@ export default function Products() {
                   Consultar opciones
                 </button>
               </div>
+              <button className="cart-button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  addToCart(product);
+                }}
+              >
+                Agregar al carrito
+              </button>
             </article>
           </ScrollAnimation>
         ))}

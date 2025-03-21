@@ -1,22 +1,25 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
-import Layout from './components/Layout';
+import Layout from './layouts/Layout';
+import ProductsLayout from './layouts/ProductsLayout';
+import FinishedProductsLayout from './layouts/FinishedProductsLayout';
 import HomePage from './pages/HomePage';
 import Products from './pages/Products';
 import Tools from './pages/Tools';
 import Contact from './pages/Contact';
 import Espejos from './pages/Espejos';
 import ArticulosReligiosos from './pages/ArticulosReligiosos';
-import ProductsLayout from './components/ProductsLayout';
-import FinishedProductsLayout from './components/FinishedProductsLayout';
 import ProductDetailPage from './pages/ProductDetailPage';
 import FooterSection from './components/FooterSection';
 import AboutUs from './pages/AboutUs';
 import './main.css';
+import CheckOut from "./pages/CheckOut";
+import { CartProvider } from "./context/CartContext";
 export default function App() {
   return (
     <>
     <Layout>
+      <CartProvider>
       <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -34,7 +37,9 @@ export default function App() {
           <Route path="/producto/:id" element={<ProductDetailPage />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/nosotros" element={<AboutUs />} />
+        <Route path="/compra" element={<CheckOut />} />
       </Routes>
+      </CartProvider>
     </Layout>
     <FooterSection/>
     </>

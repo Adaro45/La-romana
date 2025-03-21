@@ -83,7 +83,18 @@
     font-size: larger;
     border-radius: 6px;
   }
-  
+  .back-button{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+    background-color: var(--off-white);
+    color: var(--navy);
+    padding: 0.8rem 1rem !important;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 6px;
+  }
   .buy-button:hover {
     background-color:var(--gold);
     transition: all 0.3s ease;
