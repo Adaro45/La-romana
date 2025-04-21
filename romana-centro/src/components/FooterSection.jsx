@@ -58,7 +58,7 @@ const FooterSection = () => {
               <h4>Contacto</h4>
               <p>Tel: +525648210476</p>
               <p>Email: romanacentro@yahoo.com</p>
-              <p>Dirección: Donceles 71 A, Col. Centro, Cuauhtémoc, CDMX</p>
+              <p>Dirección: Donceles 74, Interior Local 10A, Col. Centro, Cuauhtémoc, CDMX</p>
               <div className="social-icons">
                 <a href="https://facebook.com/romanacentro" target="_blank" rel="noopener noreferrer">
                   <img src="/icons/facebook.png" alt="Facebook" className="icon" />

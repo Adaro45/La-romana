@@ -7,7 +7,6 @@ const MobileProductSelector = () => {
   const options = [
     { label: "Molduras", path: "molduras" },
     { label: "Herramientas", path: "herramientas" },
-    { label: "Terminados", path: "terminados" },
   ];
 
   const location = useLocation();

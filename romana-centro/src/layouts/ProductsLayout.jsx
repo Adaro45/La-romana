@@ -21,10 +21,6 @@ const ProductsLayout = () => {
           <li className={currentPath === "herramientas" ? "active" : ""}>
             <Link to="/productos/herramientas">Herramientas e Insumos</Link>
           </li>
-          <li className={currentPath === "terminados" ? "active" : ""}>
-            <Link to="/productos/terminados">Terminados</Link>
-          </li>
-
         </ul>
       </nav>
 

@@ -4,8 +4,9 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     max-width: 90%;
-    margin: 0 auto 3rem;
+    margin: 0 auto 4rem;
     padding: 0 1.5rem;
+    margin-top: 3rem;
 }
 .page-title-herramientas {
     text-align: center;
@@ -39,7 +40,6 @@
     }
     
     .card-button:hover {
-      background: #e0b52e;
       transform: scale(1.05);
     }
   }

@@ -5,9 +5,11 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora350.webp",
     specs: ["Ancho máximo de laminación 350mm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/laminadora350.webp",
     }
+    
   },
   {
     id: 2,
@@ -15,6 +17,7 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora1000.webp",
     specs: ["Ancho máximo de laminación 650mm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/laminadora1000.webp",
     },
@@ -25,6 +28,7 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora650.webp",
     specs: ["Ancho máximo de laminación 750mm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/laminadora650.webp",
     },
@@ -35,6 +39,7 @@ export const placeholderTools = [
     description: "Máquina Laminadora en Frío",
     image: "/images/herramientas/laminadora1000.webp",
     specs: ["Ancho máximo de laminación 10000mm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/laminadora1000.webp",
     },
@@ -48,6 +53,7 @@ export const placeholderTools = [
       "Impulsa clavos en V de tamaño 7,10. 12,15mm",
       "Compacto: Con solo 2,5 kg",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/Vnailer.webp",
     },
@@ -62,6 +68,7 @@ export const placeholderTools = [
       "Tiene capacidad para 200 piezas de clavos",
       "Solo 2,5 kg de peso",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/herramientas/VnailerVerde.webp",
     },
@@ -76,6 +83,7 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/1.webp",
     },
@@ -90,6 +98,7 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/2.webp",
     },
@@ -104,6 +113,7 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/2.webp",
     },
@@ -118,6 +128,7 @@ export const placeholderTools = [
       "Grapa para ensambladora de marcos",
       "Garantía del vendedor: 1 mes",
     ],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/2.webp",
     },
@@ -128,6 +139,7 @@ export const placeholderTools = [
     description: "Macocel",
     image: "/images/grapas/MDF.webp",
     specs: ["Personalizable", "Fácil instalación", "Resistente al tiempo"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/MDF.webp",
     },
@@ -139,6 +151,7 @@ export const placeholderTools = [
     description: "Caballete Pequeño",
     image: "/images/grapas/caballetepe.webp",
     specs: ["5.9inch 15cm de altura", "Tablero de fibra de madera"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/caballetepe.webp",
     },
@@ -149,6 +162,7 @@ export const placeholderTools = [
     description: "Caballete Mediano",
     image: "/images/grapas/caballetemed.webp",
     specs: ["20inch 50.8cm de altura", "Tablero de madera"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/caballetemed.webp",
     },
@@ -159,6 +173,7 @@ export const placeholderTools = [
     description: "Caballete Grande",
     image: "/images/grapas/caballetegran.webp",
     specs: ["59inch 150cm de altura", "Tablero de madera"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/caballetegran.webp",
     },
@@ -169,6 +184,7 @@ export const placeholderTools = [
     description: "Cinta adhesiva doble cara",
     image: "/images/grapas/cintadoblecara.webp",
     specs: ["Rollo un 1320cm x 5000cm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/cintadoblecara.webp",
     },
@@ -179,6 +195,7 @@ export const placeholderTools = [
     description: "Cinta adhesiva doble cara",
     image: "/images/grapas/cintadoblecara.webp",
     specs: ["Rollo un 635cm x 5000cm"],
+    Precio_unidad: 120,
     details: {
       zoom: "/images/grapas/cintadoblecara.webp",
     },
@@ -214,11 +231,11 @@ export const products = [
   },
   {
     id: 18,
-    title: "Florencia",
+    title: "florencia",
     description: "Moldura para enmarcado de alta resistencia",
-    image: "/images/molduras/florencia.webp",
+    image: "/images/molduras/florencia.JPG",
     specs: [
-      "Colores: Vino, Nogal, Cobre, Titanio, Plata",
+      "Colores: Plata, Vino, Nogal, Cobre, Titanio ",
       "Cortada a medida",
       "Barra entera (2.9m)",
       "Poliestireno",
@@ -273,7 +290,7 @@ export const products = [
       "Barra entera (2.9m)",
       "Poliestireno",
     ],
-    Precio_unidad: 120,
+    Precio_unidad: 100,
     CantXcaja: 34,
     details:{
       negro:"/images/detalles/milannegro.webp",
@@ -288,19 +305,34 @@ export const products = [
     id: 21,
     title: "Venecia",
     description: "Moldura para enmarcado de alta resistencia",
-    image: "/images/molduras/Venecia.webp",
+    image: "/images/molduras/venecia.jpg",
     specs: [
-      "Colores: Oro",
+      "Colores: Negro, Plata, Chocolate, Nogal, Oro",
       "Cortada a medida",
       "Barra entera (2.9m)",
       "Poliestireno",
     ],
-    Precio_unidad: 120,
-    CantXcaja: 26,
+    Precio_unidad: 50,
+    CantXcaja: 100,
     details:{
-      oro:"/images/detalles/venecia.webp",
-      oro_detalle:"/images/detalles/veneciadetalle.webp",
-    }
+      oro:"/images/detalles/venecia.jpg",
+      },
+  },{
+    id: 22,
+    title: "Faldon con Maria Luisa",
+    description: "Moldura para enmarcado de alta resistencia",
+    image: "/images/molduras/Faldon.jpg",
+    specs: [
+      "Colores: Nogal, Magnolia ",
+      "Cortada a medida",
+      "Barra entera (2.9m)",
+      "Poliestireno",
+    ],
+    Precio_unidad: 150,
+    CantXcaja: 40,
+    details:{
+      oro:"/images/detalles/Faldon.jpg",
+      },
   },
 ];
 
@@ -823,12 +855,6 @@ export const articulosreligiosos = [
 export const allProducts = [
   ...placeholderTools,
   ...products,
-  ...espejos,
-  ...articulosreligiosos,
-];
-export const terminados = [
-  ...espejos,
-  ...articulosreligiosos,
 ];
 
 export const detailsmolduras = [{
@@ -863,32 +889,32 @@ export const detailsmolduras = [{
 },
 {
   id: 7,
-  title: "Florencia",
-  description: "Florencia vino",
+  title: "florencia",
+  description: "florencia vino",
   image: "/images/detalles/SS/florenciavinodetalle.webp",
 },
 {
   id: 8,
-  title: "Florencia",
-  description: "Florencia Nogal",
+  title: "florencia",
+  description: "florencia Nogal",
   image: "/images/detalles/SS/florencianogaldetalle.webp",
 },
 {
   id: 9,
-  title: "Florencia",
-  description: "Florencia Cobre",
+  title: "florencia",
+  description: "florencia Cobre",
   image: "/images/detalles/SS/florenciacobredetalle.webp",
 },
 {
   id: 10,
-  title: "Florencia",
-  description: "Florencia Plata",
+  title: "florencia",
+  description: "florencia Plata",
   image: "/images/detalles/SS/florenciaplatadetalle.webp",
 },
 {
   id: 11,
-  title: "Florencia",
-  description: "Florencia Titanio",
+  title: "florencia",
+  description: "florencia Titanio",
   image: "/images/detalles/SS/florenciatitaniodetalle.webp",
 },
 {

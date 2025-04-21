@@ -54,7 +54,7 @@ export default function Products() {
 
     setFilteredProducts(result)
   }, [filters])
-
+  console.log("Filtered Products:", filters, filteredProducts)
   // Manejar cambios en los filtros
   const handleFilterChange = (e) => {
     const { name, value } = e.target

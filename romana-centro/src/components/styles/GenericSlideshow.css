@@ -17,7 +17,9 @@
   will-change: opacity;
 }
 
-
+.products-outlet{
+  padding-top: 2rem ;
+}
 .fade-slide.active {
   opacity: 1;
   z-index: 2;
@@ -71,6 +73,7 @@
 .slide-overlay h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--off-white);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 

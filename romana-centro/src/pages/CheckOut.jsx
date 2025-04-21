@@ -33,6 +33,7 @@ export default function CheckOut() {
   // Genera un folio único basado en el timestamp
   const generateFolio = () => {
     const base = Date.now().toString(36).toUpperCase();
+    
     return `FOLIO-${base.substring(base.length - 5)}`;
   };
 
@@ -48,7 +49,36 @@ export default function CheckOut() {
       unit: "pt",
       format: "letter",
     });
+    // const sendPDFByEmail = async (pdfBlob) => {
+    //   const formData = new FormData();
+    //   formData.append("to", "romanacentro@yahoo.com");
+    //   formData.append("subject", "Nuevo Ticket de Compra");
+    //   formData.append("body", "Adjunto encontrará el ticket de compra generado.");
+    //   formData.append("attachment", pdfBlob, `ticket_${generateFolio()}.pdf`);
+    // //api-key 5151b8785315bdd2844a694d7e47fcf1
+    // // secret-key d654ffff5b90f217e0c7cc1f814cf516
+    //   try {
+    //   const response = await fetch("https://your-email-api-endpoint.com/send", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
 
+    //   if (!response.ok) {
+    //     throw new Error("Error al enviar el correo.");
+    //   }
+
+    //   alert("PDF enviado por correo con éxito.");
+    //   } catch (error) {
+    //   console.error("Error al enviar el correo:", error);
+    //   alert("Hubo un problema al enviar el correo.");
+    //   }
+    // };
+
+    // // Generar el PDF como Blob
+    // const pdfBlob = doc.output("blob");
+
+    // // Enviar el PDF por correo
+    // await sendPDFByEmail(pdfBlob);
     const pageWidth = doc.internal.pageSize.getWidth();
     const logoWidth = 200;
     const logoHeight = 100;
@@ -73,7 +103,7 @@ export default function CheckOut() {
     doc.setFontSize(14);
     doc.text("Romana Centro", 40, yOffset);
     yOffset += 15;
-    doc.text("DIRECCIÓN: Donceles 71 A, Col. Centro, Cuauhtémoc", 40, yOffset);
+    doc.text("DIRECCIÓN: Donceles 74 Interior Local 10A, Col. Centro, Cuauhtémoc", 40, yOffset);
     yOffset += 15;
     doc.text("CDMX, México - CP 06010", 40, yOffset);
     yOffset += 15;
@@ -115,7 +145,7 @@ export default function CheckOut() {
     doc.text(`TOTAL: $${subtotal} MXN`, 40, finalY);
 
     finalY += 30;
-    doc.text("Con este documento comuníquese con uno de nuestros asesores para hacer el pedido.", 40, finalY);
+    doc.text("Por favor, comuniquese con uno de nuestros asesores para hacer el pedido. Con este documento digital, podrá recoger su compra.", 40, finalY);
     doc.text("Para recoger su compra, diríjase a la ubicación de la tienda con este documento digital.", 40, finalY + 15);
     finalY += 40;
     doc.text("Gracias por su preferencia.", 50, finalY);
@@ -191,7 +221,7 @@ export default function CheckOut() {
       {cart.length > 0 && (
         <div className="checkout-actions">
           <button className="checkout-btn" onClick={handleGeneratePDF}>
-            Generar PDF
+            Generar Ticket PDF
           </button>
           <button className="cancel-btn" onClick={clearCart}>
             Cancelar Compra

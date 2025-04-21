@@ -2,9 +2,9 @@
 
 import { Link } from "react-router-dom"
 import { lazy, Suspense, useEffect } from "react"
-import { LazyLoadImage } from "react-lazy-load-image-component"
+// import { LazyLoadImage } from "react-lazy-load-image-component"
 import "./styles/HomePage.css"
-import { detailsmolduras, placeholderTools as herramientas, terminados } from "../files"
+import { detailsmolduras, placeholderTools as herramientas} from "../files"
 import ScrollAnimation from "../components/ScrollAnimation"
 
 const SlideShowSection = lazy(() => import("../components/SlideShowSection"))
@@ -98,22 +98,9 @@ export default function HomePage() {
               reverse={true}
             />
           </Suspense>
-
-          {/* Slide para Productos Terminados */}
-          <Suspense fallback={<div className="loading-slides">Cargando...</div>}>
-            <SlideShowSection
-              category="Productos Terminados"
-              items={terminados}
-              description="Descubre nuestros productos terminados, listos para embellecer tus espacios."
-              buttonLabel="Ver Productos Terminados"
-              buttonLink="/productos/terminados"
-              reverse={false}
-            />
-          </Suspense>
         </ScrollAnimation>
       </section>
 
-      {/* Nueva sección de testimonios */}
       <section className="testimonials">
         <div className="container">
           <h2 className="section-title">Lo que dicen nuestros clientes</h2>
