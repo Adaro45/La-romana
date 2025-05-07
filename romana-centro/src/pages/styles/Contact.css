@@ -63,7 +63,8 @@
 }
 
 .whatsapp:hover {
-    background-color: #1EBE57;
+    background-color: #b5ffcf;
+    color: var(--navy);
 }
 
 .email {
@@ -72,7 +73,7 @@
 }
 
 .email:hover {
-    background-color: #b89630;
+    background-color: var(--navy);
 }
 
 @media (max-width: 768px) {

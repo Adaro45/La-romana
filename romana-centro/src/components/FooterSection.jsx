@@ -50,8 +50,6 @@ const FooterSection = () => {
               <h4>Productos</h4>
               <Link to="/productos/molduras">Molduras</Link>
               <Link to="/productos/herramientas">Herramientas</Link>
-              <Link to="/productos/terminados/espejos">Espejos</Link>
-              <Link to="/productos/terminados/articulos-religiosos">Artículos Religiosos</Link>
             </div>
 
             <div className="footer-column">

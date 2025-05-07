@@ -18,7 +18,10 @@
   cursor: pointer;
   border: none;
   box-shadow: var(--shadow-md);
-  position: relative;
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  z-index: 800;
   transition: all var(--transition-medium);
 }
 
@@ -30,11 +33,10 @@
 
 .cart-count {
   position: absolute;
-  top: -5px;
-  right: -5px;
   background: var(--accent);
   color: white;
   border-radius: 50%;
+  margin-left: 0;
   width: 20px;
   height: 20px;
   display: flex;
@@ -42,6 +44,8 @@
   justify-content: center;
   font-size: 0.75rem;
   font-weight: bold;
+  bottom: -5px;
+  right: -5px;
 }
 
 .cart {
@@ -51,6 +55,8 @@
   box-shadow: var(--shadow-lg);
   overflow: hidden;
   animation: slideIn 0.3s ease forwards;
+  position: relative;
+  z-index: 1200;
 }
 
 @keyframes slideIn {

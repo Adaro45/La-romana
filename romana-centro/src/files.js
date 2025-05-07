@@ -305,7 +305,7 @@ export const products = [
     id: 21,
     title: "Venecia",
     description: "Moldura para enmarcado de alta resistencia",
-    image: "/images/molduras/venecia.jpg",
+    image: "/images/molduras/Venecia.jpg",
     specs: [
       "Colores: Negro, Plata, Chocolate, Nogal, Oro",
       "Cortada a medida",
@@ -315,24 +315,24 @@ export const products = [
     Precio_unidad: 50,
     CantXcaja: 100,
     details:{
-      oro:"/images/detalles/venecia.jpg",
+      oro:"/images/detalles/Venecia.jpg",
       },
-  },{
-    id: 22,
-    title: "Faldon con Maria Luisa",
-    description: "Moldura para enmarcado de alta resistencia",
-    image: "/images/molduras/Faldon.jpg",
-    specs: [
-      "Colores: Nogal, Magnolia ",
-      "Cortada a medida",
-      "Barra entera (2.9m)",
-      "Poliestireno",
-    ],
-    Precio_unidad: 150,
-    CantXcaja: 40,
-    details:{
-      oro:"/images/detalles/Faldon.jpg",
-      },
+  // },{
+  //   id: 22,
+  //   title: "Faldon con Maria Luisa",
+  //   description: "Moldura para enmarcado de alta resistencia",
+  //   image: "/images/molduras/Faldon.jpg",
+  //   specs: [
+  //     "Colores: Nogal, Magnolia ",
+  //     "Cortada a medida",
+  //     "Barra entera (2.9m)",
+  //     "Poliestireno",
+  //   ],
+  //   Precio_unidad: 150,
+  //   CantXcaja: 40,
+  //   details:{
+  //     oro:"/images/detalles/Faldon.jpg",
+  //     },
   },
 ];
 

@@ -1,6 +1,8 @@
 
   .page-title {
     text-align: center;
+    position: relative;
+    z-index: 900;
     font-size: 2rem;
     padding: 1rem;
     padding-top: 0;
@@ -53,6 +55,9 @@
     color: var(--off-white);
     transition: color 0.3s ease;
   }
+  .mobile-only{
+    display: none;
+  }
   @media (max-width: 720px){
     .products-subnav {
       overflow-x: hidden;
@@ -70,6 +75,7 @@
   @media (max-width: 480px){
     .products-subnav {
       overflow-x: hidden;
+      padding-top: 1rem;
       border-bottom: none;
     }
   
@@ -80,11 +86,20 @@
     .products-subnav li {
       padding: 0.5rem 0.5rem;
     }
+    .mobile-only {
+      display: flex;
+      position: sticky;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      top: 4.5rem;
+      z-index: 900;
+    }
   }
   
-  .mobile-only {
-    display: none;
-  }
+
   .selected-option:hover {
     background-color: var(--gold);
     color: var(--navy);
