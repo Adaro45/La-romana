@@ -5,8 +5,8 @@
 /* Hero Section */
 .hero {
   min-height: 80vh;
-  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
-    url("../../../public/images/placeholder2.webp") center / cover;
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url("../../../public/images/herramientas/txt-ejemplo.webp") center /
+    cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,6 +115,71 @@
   line-height: 1.6;
 }
 
+/* Banner de promoción */
+.promo-banner {
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
+    url("../../../public/images/herramientas/txt-ejemplo.webp") center / cover;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  margin: 0 auto var(--space-xxl);
+  max-width: 1200px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-banner::before {
+  content: "OFERTA";
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.promo-content {
+  text-align: center;
+  color: var(--bright-white);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.promo-content h2 {
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.promo-content p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all var(--transition-medium);
+}
+
+.promo-button:hover {
+  background: var(--bright-white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
 /* Testimonials Section */
 .testimonials {
   background: linear-gradient(rgba(44, 62, 80, 0.03), rgba(44, 62, 80, 0.07));
@@ -199,8 +264,8 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-    url("../../../public/images/placeholder2.webp") center / cover;
+  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("../../../public/images/herramientas/txt-ejemplo.webp") center /
+    cover;
   padding: var(--space-xxl) 0;
   color: var(--bright-white);
   text-align: center;
@@ -260,6 +325,10 @@
   .testimonial-card {
     padding: var(--space-md);
   }
+
+  .promo-banner {
+    margin: 0 var(--space-md) var(--space-xxl);
+  }
 }
 
 @media (max-width: 480px) {
@@ -284,5 +353,17 @@
     width: 30px;
     height: 30px;
   }
-}
 
+  .promo-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .promo-content p {
+    font-size: 0.9rem;
+  }
+
+  .promo-button {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 0.9rem;
+  }
+}
