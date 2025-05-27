@@ -126,6 +126,7 @@ export default function ProductDetailPage() {
                       alt={key}
                       width="60"
                       height="60"
+                      as="image"
                     />
                   </div>
                 ))}
@@ -141,6 +142,7 @@ export default function ProductDetailPage() {
                 className="main-image"
                 width="500"
                 height="500"
+                as="image"
               />
               <div className="zoom-hint">
                 <svg

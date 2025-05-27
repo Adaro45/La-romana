@@ -5,7 +5,7 @@
 /* Hero Section */
 .hero {
   min-height: 80vh;
-  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url("../../../public/images/herramientas/txt-ejemplo.webp") center /
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url("../../../public/images/placeholder2.webp") center /
     cover;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@
 /* Banner de promoción */
 .promo-banner {
   background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
-    url("../../../public/images/herramientas/txt-ejemplo.webp") center / cover;
+    url("../../../public/images/placeholder2.webp") center / cover;
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
   margin: 0 auto var(--space-xxl);
@@ -264,7 +264,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("../../../public/images/herramientas/txt-ejemplo.webp") center /
+  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("../../../public/images/placeholder2.webp") center /
     cover;
   padding: var(--space-xxl) 0;
   color: var(--bright-white);

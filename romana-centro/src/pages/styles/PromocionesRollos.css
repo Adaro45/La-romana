@@ -9,7 +9,7 @@
   text-align: center;
   margin-bottom: var(--space-xl);
   background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-    url("../../../public/images/herramientas/txt-ejemplo.webp") center / cover;
+    url("../../../public/images/placeholder2.webp") center / cover;
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
   color: var(--bright-white);
@@ -536,7 +536,7 @@
 /* Footer y CTA */
 .promociones-cta {
   background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-    url("../../../public/images/herramientas/txt-ejemplo.webp") center / cover;
+    url("../../../public/images/placeholder2.webp") center / cover;
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
   text-align: center;
@@ -703,4 +703,10 @@
     padding: var(--space-sm);
     font-size: 0.9rem;
   }
+}
+.masadhesivologo{
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin: 0 auto;
 }

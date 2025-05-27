@@ -40,82 +40,84 @@ export default function PromocionesRollos() {
       id: 17,
       title: "Rollo de Textura Piel",
       description: "Rollo de Textura Piel Más Adhesivo",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       specs: ["Rollo un 25'x40m"],
       Precio_unidad: 1300,
       precioOferta: 1100,
       CantXcaja: 1,
       details: {
-        zoom: "/images/detalles/piel.JPG",
-        zoom_detalle: "/images/detalles/pieldetalle.JPG",
+        zoom: "/images/detalles/piel.webp",
+        zoom_detalle: "/images/detalles/pieldetalle.webp",
       },
     },
     {
       id: 18,
       title: "Rollo de Textura Lino Fino",
       description: "Rollo de Textura Lino Fino Más Adhesivo",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       specs: ["Rollo un 25'x40m"],
       Precio_unidad: 1300,
       precioOferta: 1100,
       CantXcaja: 1,
       details: {
-        zoom: "/images/detalles/linofino.JPG",
-        zoom_detalle: "/images/detalles/linofinodetalle.JPG",
+        zoom: "/images/detalles/linofino.webp",
+        zoom_detalle: "/images/detalles/linofinodetalle.webp",
       },
     },
     {
       id: 19,
       title: "Rollo de Textura Santex",
       description: "Rollo de Textura Santex Más Adhesivo",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       specs: ["Rollo un 25'x40m"],
       Precio_unidad: 1300,
       precioOferta: 1100, 
       CantXcaja: 1,
       details: {
         zoom: "/images/detalles/santex.JPG",
-        zoom_detalle: "/images/detalles/santexdetalle.JPG",
+        zoom_detalle: "/images/detalles/santexdetalle.webp",
       },
     },
     {
       id: 20,
       title: "Rollo de Textura Canvas",
       description: "Rollo de Textura Canvas Más Adhesivo",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       specs: ["Rollo un 25'x40m"],
       Precio_unidad: 1300,
       precioOferta: 1100, 
       CantXcaja: 1,
       details: {
-        zoom: "/images/detalles/canvas.JPG",
-        zoom_detalle: "/images/detalles/canvasdetalle.JPG",
+        zoom: "/images/detalles/canvas.webp",
+        zoom_detalle: "/images/detalles/canvasdetalle.webp",
       },
     },
        {
       id: 15,
       title: "Cinta Adhesiva Doble Cara",
       description: "Cinta adhesiva doble cara",
-      image: "/images/grapas/cintadoblecara.webp",
+      image: "/images/grapas/cintadoblecara.png",
       specs: ["Rollo un 25'x40m"],
       Precio_unidad: 2600,
       precioOferta: 2400,
       CantXcaja: 1,
       details: {
-        zoom: "/images/grapas/cintadoblecara.webp",
+        zoom: "/images/grapas/cintadoblecara.png",
+        zoom_detalle: "/images/detalles/adehesivodetalle.webp",
       },
     },
     {
       id: 16,
       title: "Cinta Adhesiva Doble Cara",
       description: "Cinta adhesiva doble cara",
-      image: "/images/grapas/cintadoblecara.webp",
+      image: "/images/grapas/cintadoblecara.png",
       specs: ["Rollo un 50'x40m"],
       Precio_unidad: 1300,
       precioOferta: 1100, 
       CantXcaja: 1,
       details: {
-        zoom: "/images/grapas/cintadoblecara.webp",
+        zoom: "/images/grapas/cintadoblecara.png",
+        zoom_detalle: "/images/detalles/adehesivodetalle.webp",
       },
     },
   ]
@@ -126,7 +128,7 @@ export default function PromocionesRollos() {
       id: "pack1",
       title: "Pack Texturas Premium",
       description: "Incluye 1 rollo de Textura Piel y 1 rollo de Textura Canvas",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       productos: [rollosProductos[0], rollosProductos[3]],
       precioRegular: 4800,
       precioOferta: 4400, // 15% descuento
@@ -135,7 +137,7 @@ export default function PromocionesRollos() {
       id: "pack2",
       title: "Pack Texturas Clásicas",
       description: "Incluye 1 rollo de Textura Lino Fino y 1 rollo de Textura Santex",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       productos: [rollosProductos[1], rollosProductos[2]],
       precioRegular: 4800,
       precioOferta: 4400, // 15% descuento
@@ -144,7 +146,7 @@ export default function PromocionesRollos() {
       id: "pack4",
       title: "Pack Completo",
       description: "Incluye 1 rollo de Textura a elección y 1 Cinta Adhesiva Doble Cara",
-      image: "/images/grapas/cintadoblecara.webp",
+      image: "/images/grapas/cintadoblecara.png",
       productos: [rollosProductos[0], rollosProductos[6]],
       precioRegular: 4800,
       precioOferta: 4400, // 20% descuento
@@ -153,7 +155,7 @@ export default function PromocionesRollos() {
       id: "pack5",
       title: "Pack Profesional",
       description: "Incluye 2 rollos de Textura a elección con 25% de descuento",
-      image: "/images/herramientas/txt-ejemplo.webp",
+      image: "/images/herramientas/txt-ejemplo.png",
       customPack: true,
       precioRegular: 4800,
       precioOferta: 4400, // 25% descuento
@@ -360,7 +362,7 @@ export default function PromocionesRollos() {
                 <div className="oferta-card">
                   <div className="oferta-badge">¡OFERTA!</div>
                   <div className="oferta-image">
-                    <img src={producto.image || "/placeholder.svg"} alt={producto.title} />
+                    <img src={producto.image || "/placeholder.svg"} alt={producto.title} as="image"/>
                   </div>
                   <div className="oferta-content">
                     <h3>{producto.title}</h3>
@@ -415,7 +417,7 @@ export default function PromocionesRollos() {
                 <div className="paquete-card">
                   <div className="paquete-badge">¡PACK ESPECIAL!</div>
                   <div className="paquete-image">
-                    <img src={paquete.image || "/placeholder.svg"} alt={paquete.title} />
+                    <img src={paquete.image || "/placeholder.svg"} alt={paquete.title} as="image" />
                   </div>
                   <div className="paquete-content">
                     <h3>{paquete.title}</h3>
@@ -542,7 +544,7 @@ export default function PromocionesRollos() {
               <p>Escanea este código QR o comparte el enlace con tus colegas.</p>
 
               <div className="qr-container">{QRCode && <QRCode value={currentUrl} size={200} />}</div>
-
+              <div className="masadhesivologo"><img src="images/detalles/masadehsivologo.png" alt="logo" /></div>
               <div className="share-url">
                 <input type="text" value={currentUrl} readOnly />
                 <button onClick={handleCopyUrl}>{copied ? "¡Copiado!" : "Copiar"}</button>

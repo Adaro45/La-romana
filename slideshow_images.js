@@ -1,0 +1,1 @@
+const slideshowImages = ["/./webp/Canvasdetalle (2).webp", "/./webp/Canvasdetalle (3).webp", "/./webp/LinoFinodetalle (2).webp", "/./webp/LinoFinodetalle (3).webp", "/./webp/Pieldetalle (2).webp", "/./webp/Pieldetalle (3).webp", "/./webp/Santexdetalle (2).webp", "/./webp/Santexdetalle (3).webp"];

@@ -19,7 +19,7 @@ const ProductCard = ({ product, isExclusive = false }) => {
     <Link to={`/producto/${product.id}`} className="product-link">
       <article className={`product-card ${isExclusive ? "exclusive" : ""}`}>
         <div className="card-image-container">
-          <img src={product.image || "/placeholder.svg"} alt={product.title} loading="lazy" width="300" height="300" />
+          <img src={product.image || "/placeholder.svg"} alt={product.title} loading="lazy" width="300" height="300" as="image"/>
           {product.Precio_unidad && (
             <div className="product-price">
               ${product.Precio_unidad} <span className="price-unit">MXN</span>
