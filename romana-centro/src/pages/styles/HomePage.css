@@ -367,3 +367,23 @@
     font-size: 0.9rem;
   }
 }
+/* Botón “Promociones Rollos” (btn-tertiary) */
+.btn-tertiary {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all var(--transition-medium);
+  margin-top: var(--space-md); /* Espacio lateral para separarlo */
+}
+
+.btn-tertiary:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}

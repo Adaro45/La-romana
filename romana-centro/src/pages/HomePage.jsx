@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { lazy, Suspense, useEffect } from "react"
 // import { LazyLoadImage } from "react-lazy-load-image-component"
 import "./styles/HomePage.css"
-import { detailsmolduras, placeholderTools as herramientas} from "../files"
+import { detailsmolduras, placeholderTools as herramientas } from "../files"
 import ScrollAnimation from "../components/ScrollAnimation"
 
 const SlideShowSection = lazy(() => import("../components/SlideShowSection"))
@@ -41,7 +41,10 @@ export default function HomePage() {
           <Link to="/contacto" className="btn-secondary">
             Contactar Asesor
           </Link>
-        </div>
+          </div>
+          <Link to="/promociones-rollos" className="btn-tertiary">
+            Accede a Nuestras Promociones
+          </Link>
       </section>
 
       <section className="features">

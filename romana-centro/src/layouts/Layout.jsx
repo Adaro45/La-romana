@@ -51,6 +51,7 @@ export default function Layout({ children }) {
           <div ref={navLinksRef} className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <Link to="/" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
             <Link to="/productos" onClick={() => setIsMenuOpen(false)}>Productos</Link>
+            <Link to="/productos/herramientas" onClick={() => setIsMenuOpen(false)}>Herramientas</Link>
             <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>Contacto</Link>
           </div>
         </nav>

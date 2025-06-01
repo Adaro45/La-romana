@@ -98,8 +98,8 @@ export default function PromocionesRollos() {
       description: "Cinta adhesiva doble cara",
       image: "/images/grapas/cintadoblecara.png",
       specs: ["Rollo un 25'x40m"],
-      Precio_unidad: 2600,
-      precioOferta: 2400,
+      Precio_unidad: 1300,
+      precioOferta: 1100,
       CantXcaja: 1,
       details: {
         zoom: "/images/grapas/cintadoblecara.png",
@@ -112,8 +112,8 @@ export default function PromocionesRollos() {
       description: "Cinta adhesiva doble cara",
       image: "/images/grapas/cintadoblecara.png",
       specs: ["Rollo un 50'x40m"],
-      Precio_unidad: 1300,
-      precioOferta: 1100, 
+      Precio_unidad: 2600,
+      precioOferta: 2500, 
       CantXcaja: 1,
       details: {
         zoom: "/images/grapas/cintadoblecara.png",
@@ -122,45 +122,7 @@ export default function PromocionesRollos() {
     },
   ]
 
-  // Paquetes promocionales
-  const paquetesPromocionales = [
-    {
-      id: "pack1",
-      title: "Pack Texturas Premium",
-      description: "Incluye 1 rollo de Textura Piel y 1 rollo de Textura Canvas",
-      image: "/images/herramientas/txt-ejemplo.png",
-      productos: [rollosProductos[0], rollosProductos[3]],
-      precioRegular: 4800,
-      precioOferta: 4400, // 15% descuento
-    },
-    {
-      id: "pack2",
-      title: "Pack Texturas Clásicas",
-      description: "Incluye 1 rollo de Textura Lino Fino y 1 rollo de Textura Santex",
-      image: "/images/herramientas/txt-ejemplo.png",
-      productos: [rollosProductos[1], rollosProductos[2]],
-      precioRegular: 4800,
-      precioOferta: 4400, // 15% descuento
-    },
-    {
-      id: "pack4",
-      title: "Pack Completo",
-      description: "Incluye 1 rollo de Textura a elección y 1 Cinta Adhesiva Doble Cara",
-      image: "/images/grapas/cintadoblecara.png",
-      productos: [rollosProductos[0], rollosProductos[6]],
-      precioRegular: 4800,
-      precioOferta: 4400, // 20% descuento
-    },
-    {
-      id: "pack5",
-      title: "Pack Profesional",
-      description: "Incluye 2 rollos de Textura a elección con 25% de descuento",
-      image: "/images/herramientas/txt-ejemplo.png",
-      customPack: true,
-      precioRegular: 4800,
-      precioOferta: 4400, // 25% descuento
-    },
-  ]
+  
 
   // Actualizar el contador de tiempo
   useEffect(() => {
@@ -341,12 +303,6 @@ export default function PromocionesRollos() {
           Ofertas Individuales
         </button>
         <button
-          className={`tab-button ${activeTab === "paquetes" ? "active" : ""}`}
-          onClick={() => setActiveTab("paquetes")}
-        >
-          Paquetes Promocionales
-        </button>
-        <button
           className={`tab-button ${activeTab === "contacto" ? "active" : ""}`}
           onClick={() => setActiveTab("contacto")}
         >
@@ -360,7 +316,7 @@ export default function PromocionesRollos() {
             {rollosProductos.map((producto) => (
               <ScrollAnimation key={producto.id}>
                 <div className="oferta-card">
-                  <div className="oferta-badge">¡OFERTA!</div>
+                  <div className="oferta-badge">¡¡OFERTA!!</div>
                   <div className="oferta-image">
                     <img src={producto.image || "/placeholder.svg"} alt={producto.title} as="image"/>
                   </div>
@@ -410,55 +366,7 @@ export default function PromocionesRollos() {
           </div>
         )}
 
-        {activeTab === "paquetes" && (
-          <div className="paquetes-grid">
-            {paquetesPromocionales.map((paquete) => (
-              <ScrollAnimation key={paquete.id}>
-                <div className="paquete-card">
-                  <div className="paquete-badge">¡PACK ESPECIAL!</div>
-                  <div className="paquete-image">
-                    <img src={paquete.image || "/placeholder.svg"} alt={paquete.title} as="image" />
-                  </div>
-                  <div className="paquete-content">
-                    <h3>{paquete.title}</h3>
-                    <p>{paquete.description}</p>
-                    <div className="paquete-prices">
-                      <span className="price-regular">${paquete.precioRegular}</span>
-                      <span className="price-offer">${paquete.precioOferta}</span>
-                      <span className="price-savings">
-                        Ahorras: ${(paquete.precioRegular - paquete.precioOferta).toFixed(0)}
-                      </span>
-                    </div>
-                    <div className="paquete-actions">
-                      <button
-                        className="btn-add-to-cart"
-                        onClick={() => handleAddPackToCart(paquete)}
-                        aria-label={`Agregar ${paquete.title} al carrito`}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <circle cx="9" cy="21" r="1"></circle>
-                          <circle cx="20" cy="21" r="1"></circle>
-                          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                        {paquete.customPack ? "Solicitar Pack" : "Agregar Pack al Carrito"}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </ScrollAnimation>
-            ))}
-          </div>
-        )}
+        
 
         {activeTab === "contacto" && (
           <div className="contacto-container">

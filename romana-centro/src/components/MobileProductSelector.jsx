@@ -30,7 +30,7 @@ const MobileProductSelector = () => {
         className="selected-option"
         onClick={() => setShowOptions(!showOptions)}
       >
-        {selected.label}
+        {selected.label} ↓
       </div>
       {showOptions && (
         <div className="options-list">
@@ -39,7 +39,7 @@ const MobileProductSelector = () => {
               key={option.path}
               className="option-item"
               onClick={() => handleSelect(option)}
-            >
+            > 
               {option.label}
             </div>
           ))}
