@@ -37,6 +37,42 @@ export default function PromocionesRollos() {
 
   const rollosProductos = [
     {
+      id: 2,
+      title: "Laminadora en frío 650mm",
+      description: "Máquina Laminadora en Frío",
+      image: "/images/herramientas/laminadora1000.webp",
+      specs: ["Ancho máximo de laminación 650mm"],
+      Precio_unidad: 3000,
+      CantXcaja: 1,
+      details: {
+        zoom: "/images/herramientas/laminadora1000.webp",
+      },
+    },
+    {
+      id: 3,
+      title: "Laminadora en frío 750mm",
+      description: "Máquina Laminadora en Frío",
+      image: "/images/herramientas/laminadora650.webp",
+      specs: ["Ancho máximo de laminación 750mm"],
+      Precio_unidad: 3500,
+      CantXcaja: 1,
+      details: {
+        zoom: "/images/herramientas/laminadora650.webp",
+      },
+    },
+    {
+      id: 4,
+      title: "Laminadora en frío 1000mm",
+      description: "Máquina Laminadora en Frío",
+      image: "/images/herramientas/laminadora1000.webp",
+      specs: ["Ancho máximo de laminación 10000mm"],
+      Precio_unidad: 7000,
+      CantXcaja: 1,
+      details: {
+        zoom: "/images/herramientas/laminadora1000.webp",
+      },
+    },
+    {
       id: 17,
       title: "Rollo de Textura Piel",
       description: "Rollo de Textura Piel Más Adhesivo",
