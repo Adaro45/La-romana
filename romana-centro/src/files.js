@@ -3,36 +3,49 @@ export const placeholderTools = [
     id: 2,
     title: "Laminadora en frío 650mm",
     description: "Máquina Laminadora en Frío",
-    image: "/images/herramientas/laminadora1000.webp",
+    image: "/images/herramientas/LAMFRIA.PNG",
     specs: ["Ancho máximo de laminación 650mm"],
     Precio_unidad: 3000,
     CantXcaja: 1,
     details: {
-      zoom: "/images/herramientas/laminadora1000.webp",
+      zoom: "/images/herramientas/LAMFRIA.PNG",
     },
   },
   {
     id: 3,
     title: "Laminadora en frío 750mm",
     description: "Máquina Laminadora en Frío",
-    image: "/images/herramientas/laminadora650.webp",
+    image: "/images/herramientas/laminadora750.webp",
     specs: ["Ancho máximo de laminación 750mm"],
     Precio_unidad: 3500,
     CantXcaja: 1,
     details: {
-      zoom: "/images/herramientas/laminadora650.webp",
+      zoom: "/images/herramientas/laminadora750.webp",
     },
   },
   {
     id: 4,
     title: "Laminadora en frío 1000mm",
     description: "Máquina Laminadora en Frío",
-    image: "/images/herramientas/laminadora1000.webp",
+    image: "/images/herramientas/laminadora1000.JPG",
     specs: ["Ancho máximo de laminación 10000mm"],
     Precio_unidad: 7000,
     CantXcaja: 1,
     details: {
-      zoom: "/images/herramientas/laminadora1000.webp",
+      zoom: "/images/herramientas/laminadora1000.JPG",
+    },
+  },
+  {
+    id: 25,
+    title: "Pegadora IZZI Transfer",
+    description: "Máquina Pegadora para la impresión, fotografía y photobooks",
+    image: "/images/herramientas/izzitransfer.png",
+    specs: ["Peso: 59kg","Dimesiones: 81x61x52 cm", "Voltaje: 220v", "Bobina Adhesiva de 32cm x 200mts","Bobina Adhesiva de 42cm x 200mts", "Bobina Adhesiva de 52cm x 200mts", "Bobina Adhesiva de 52cm x 200mts"],
+    Precio_unidad: 2600,
+    CantXcaja: 1,
+    details: {
+      zoom: "/images/herramientas/izzitransfer.png",
+      zoom_detalle: "/images/herramientas/izzidetalle.JPG",
     },
   },
   {
@@ -307,6 +320,7 @@ export const placeholderTools = [
       detalle5: "/images/detalles/canvasdetalle4.webp",
     },
   },
+
 ]
 
 export const products = [
