@@ -40,12 +40,12 @@ export default function PromocionesRollos() {
       id: 2,
       title: "Laminadora en frío 650mm",
       description: "Máquina Laminadora en Frío",
-      image: "/images/herramientas/LAMFRIA.PNG",
+      image: "/images/herramientas/LAMFRIA.png",
       specs: ["Ancho máximo de laminación 650mm"],
       Precio_unidad: 3000,
       CantXcaja: 1,
       details: {
-        zoom: "/images/herramientas/LAMFRIA.PNG",
+        zoom: "/images/herramientas/LAMFRIA.png",
       },
     },
     {
@@ -64,12 +64,12 @@ export default function PromocionesRollos() {
       id: 4,
       title: "Laminadora en frío 1000mm",
       description: "Máquina Laminadora en Frío",
-      image: "/images/herramientas/laminadora1000.JPG",
+      image: "/images/herramientas/laminadora1000.jpg",
       specs: ["Ancho máximo de laminación 10000mm"],
       Precio_unidad: 7000,
       CantXcaja: 1,
       details: {
-        zoom: "/images/herramientas/laminadora1000.JPG",
+        zoom: "/images/herramientas/laminadora1000.jpg",
       },
     },
     {
