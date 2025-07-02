@@ -41,7 +41,7 @@ export const placeholderTools = [
     description: "Máquina Pegadora para la impresión, fotografía y photobooks",
     image: "/images/herramientas/izzitransfer.png",
     specs: ["Peso: 59kg","Dimesiones: 81x61x52 cm", "Voltaje: 220v", "Bobina Adhesiva de 32cm x 200mts","Bobina Adhesiva de 42cm x 200mts", "Bobina Adhesiva de 52cm x 200mts", "Bobina Adhesiva de 52cm x 200mts"],
-    Precio_unidad: 110000,
+    Precio_unidad: "110 000",
     CantXcaja: 1,
     details: {
       zoom: "/images/herramientas/izzitransfer.png",
@@ -195,6 +195,33 @@ export const placeholderTools = [
       zoom_detalle: "/images/detalles/adhesivodetalle.webp",
       detalle2: "/images/detalles/detalleadhesivolateral.jpg",
       detalle3: "/images/detalles/detalleadhesivodepie.jpg",
+    },
+  },  {
+    id: 36,
+    title: "Cinta Adhesiva Master, Más Adhesivo",
+    description: "Cinta adhesiva doble cara",
+    image: "/images/grapas/adhesivomaster.jpg",
+    specs: ["Rollo un 132x50m"],
+    Precio_unidad: 4640,
+    CantXcaja: 1,
+    details: {
+      zoom: "/images/grapas/adhesivomaster.jpg",
+      zoom_detalle: "/images/detalles/adhesivomasterdetalle1.jpg",
+      zoom_detalle2: "/images/detalles/adhesivomasterdetalle.jpg",
+    },
+  },
+  {
+    id: 37,
+    title: "Cinta Adhesiva Master, Más Adhesivo",
+    description: "Cinta adhesiva doble cara",
+    image: "/images/grapas/adhesivomaster.jpg",
+    specs: ["Rollo un 66'x50m"],
+    Precio_unidad: 2320,
+    CantXcaja: 1,
+    details: {
+      zoom: "/images/grapas/adhesivomaster.jpg",
+      zoom_detalle: "/images/detalles/adhesivomasterdetalle.jpg",
+      detalle2: "/images/detalles/adhesivomasterdetalle1.jpg",
     },
   },
   {
@@ -457,7 +484,7 @@ export const products = [
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/913principal.jpg",
     specs: ["Colores: 07-Gold, 07-Silver, BR, 12-Gold, 12-Silver ", "Cortada a medida", "Barra entera (2.9m)", "Poliestireno"],
-    Precio_unidad: 150,
+    Precio_unidad: 120,
     CantXcaja: 36,
     details: {
       gold: "/images/detalles/913-07detallegold.webp",
@@ -478,7 +505,7 @@ export const products = [
     description: "Moldura para enmarcado de alta resistencia",
     image: "/images/molduras/1564-07principal.jpg",
     specs: ["Colores: Negro, Nogal, Vino", "Cortada a medida", "Barra entera (2.9m)", "Poliestireno"],
-    Precio_unidad: 150,
+    Precio_unidad: 120,
     CantXcaja: 40,
     details: {
       negro: "/images/detalles/1564-07negro.webp",
