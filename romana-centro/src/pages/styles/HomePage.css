@@ -5,8 +5,8 @@
 /* Hero Section */
 .hero {
   min-height: 80vh;
-  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url("../../../public/images/placeholder2.webp") center /
-    cover;
+  background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
+    url("../../../public/images/placeholder2.webp") center / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,8 +264,8 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url("../../../public/images/placeholder2.webp") center /
-    cover;
+  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+    url("../../../public/images/placeholder2.webp") center / cover;
   padding: var(--space-xxl) 0;
   color: var(--bright-white);
   text-align: center;
@@ -306,6 +306,211 @@
   max-width: 600px;
 }
 
+/* Botón “Promociones Rollos” (btn-tertiary) */
+.btn-tertiary {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all var(--transition-medium);
+  margin-top: var(--space-md); /* Espacio lateral para separarlo */
+}
+
+.btn-tertiary:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Promoción Florencia Banner */
+.promo-florencia-banner {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 231, 196, 0.95));
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin: var(--space-xl) auto var(--space-lg);
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-florencia-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--accent), var(--gold));
+  animation: shimmer 2s infinite;
+}
+.promo-image-placeholder {
+  width: 100px;
+  height: 100px;
+  background: rgba(44, 62, 80, 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: contain;
+
+}
+.img-promocion{
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.promo-florencia-content {
+  text-align: center;
+  color: var(--navy);
+}
+
+.promo-florencia-badge {
+  background: var(--accent);
+  color: white;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.promo-florencia-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-sm);
+  color: var(--navy);
+  font-weight: bold;
+}
+
+.promo-florencia-price {
+  margin-bottom: var(--space-sm);
+}
+
+.promo-price-highlight {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  display: block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo-price-detail {
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-style: italic;
+}
+
+.promo-florencia-condition {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.promo-florencia-actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.promo-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-medium);
+  font-size: 0.9rem;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.email-btn {
+  background: var(--navy);
+  color: white;
+}
+
+.email-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.promo-florencia-images {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-image-placeholder {
+  width: 80px;
+  height: 80px;
+  background: rgba(44, 62, 80, 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  transition: all var(--transition-medium);
+}
+
+.promo-image-placeholder:hover {
+  background: rgba(212, 175, 55, 0.1);
+  transform: scale(1.05);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
@@ -328,6 +533,45 @@
 
   .promo-banner {
     margin: 0 var(--space-md) var(--space-xxl);
+  }
+  .promo-florencia-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 90%;
+    margin: var(--space-lg) auto;
+  }
+
+  .promo-florencia-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .promo-price-highlight {
+    font-size: 2rem;
+  }
+
+  .promo-florencia-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .promo-florencia-images {
+    margin-top: var(--space-md);
+  }
+
+  .promo-image-placeholder {
+    width: 80px;
+    height: 80px;
+    font-size: 0.6rem;
+  }
+  .img-promocion {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -366,24 +610,18 @@
     padding: var(--space-sm) var(--space-lg);
     font-size: 0.9rem;
   }
-}
-/* Botón “Promociones Rollos” (btn-tertiary) */
-.btn-tertiary {
-  display: inline-block;
-  background: transparent;
-  color: var(--gold);
-  border: 2px solid var(--gold);
-  padding: var(--space-md) var(--space-xl);
-  border-radius: var(--radius-md);
-  font-weight: bold;
-  text-decoration: none;
-  transition: all var(--transition-medium);
-  margin-top: var(--space-md); /* Espacio lateral para separarlo */
-}
 
-.btn-tertiary:hover {
-  background: var(--gold);
-  color: var(--navy);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+  .promo-florencia-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .promo-price-highlight {
+    font-size: 1.8rem;
+  }
+
+  .promo-florencia-images {
+    gap: var(--space-xs);
+  }
+
+
 }
