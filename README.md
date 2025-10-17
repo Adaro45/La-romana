@@ -79,7 +79,7 @@ UX-driven design to minimize friction during checkout
 👨‍💻 Author
 Andrés Darío Alomá Alonso
 Full Stack Developer — React / Web Optimization
-🌐 [Portfolio](https://github.com/Adaro45) | ✉️ [andresdaloma@gmail.com](mailto:andresdaloma@gmail.com)
+🌐 [Portfolio](https://daroportfolio.tech/) | ✉️ [andresdaloma@gmail.com](mailto:andresdaloma@gmail.com)
 
 🧾 License
 This project is open source and available for educational and portfolio purposes.
