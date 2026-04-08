@@ -31,7 +31,7 @@ export default function HomePage() {
           width="300"
           height="150"
         />
-        <div className="promo-florencia-banner">
+        {/* <div className="promo-florencia-banner">
           <div className="promo-florencia-content">
             <div className="promo-florencia-badge">¡OFERTA ESPECIAL!</div>
             <h3>Moldura Florencia 89</h3>
@@ -75,7 +75,7 @@ export default function HomePage() {
               <span><img src="images/promocion3.jpg" alt="promo" className="img-promocion" /></span>
             </div>
           </div>
-        </div>
+        </div> */}
         <h1 className="hero-title">Materiales y Soluciones para el Laminado y Enmarcado</h1>
 
         <div className="cta-buttons">
